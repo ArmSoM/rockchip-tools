@@ -1,17 +1,20 @@
-# ArmSoM Rockchip 工具下载中心
+# ArmSoM Rockchip 工具下载库
 
-这里集中维护 Rockchip 开发工具的版本化下载、校验值和使用说明。当前快照包含 **24 类工具、35 个平台/版本下载包**。
+本仓库收录 24 类工具、35 个平台或版本包，整理日期为 2026-11-15。工具包直接存入 Git 仓库，通过 [完整下载表](README.md#download-the-right-package) 选择单个文件；下载整个仓库约需 569 MiB。Linux PinDebug 大文件分为两个分卷，下载入口附带拼接和校验方法。
 
-请到 [下载目录](README.md#download-the-right-package) 选择对应工具，或进入 [GitHub Releases](https://github.com/ArmSoM/rockchip-tools/releases/tag/2026.11.15)。仓库的 Code → Download ZIP 仅下载目录与说明，不包含工具本体。
+每个工具按实际版本、运行平台和原始资料分别说明。目录名、工具版本和 PDF 手册版本不是同一个概念，也不表示支持所有 ArmSoM 产品。先确认板卡、SoC、存储、SDK/BSP 和运行主机架构，再选择工具及固件。
 
-## 使用前确认
+## 下载后检查
 
-1. 核对电脑操作系统与处理器架构，再核对板卡、SoC、载板、存储和 SDK/BSP。Windows/Linux/macOS 包不能混用。
-2. 比较下载文件与 [catalog.json](catalog.json) 中的 SHA-256。版本字段描述当前收集到的文件，不宣称为厂商最新版本。
-3. 完整解压后阅读随包 PDF、README 和更新记录；不要只复制一个 EXE 而遗漏 DLL 或资源目录。
-4. 先识别设备和保存当前信息，再安排写入。擦除、改电压、eFuse/OTP 和密钥配置不是通用的一键操作。
-5. 两个写号工具的公开副本已去除历史日志、旧会话配置及设备名称数据；Linux AVB 去除了示例密钥目录。请重新建立自己的配置和密钥。工具可执行文件未改动，原始本地资料未改动。
+1. 根据下载表选择工具和主机平台，不混用 Linux、Windows、macOS 包。
+2. 使用 `Get-FileHash`（PowerShell）或 `sha256sum`（Linux）计算文件 SHA-256，与 [校验表](SHA256SUMS) 对照。
+3. 解压到独立目录，保留说明书、依赖库和原厂声明；不要只复制一个可执行文件。
+4. 使用板卡对应 SDK 的 Loader、固件、分区参数和原理图。本文档整理没有进行刷机、熔丝烧写、调压或硬件兼容性测试。
 
-[ArmSoM 技术博客](https://blog.armsom.org/zh/) · [ArmSoM 文档](https://docs.armsom.org/) · [ArmSoM 产品](https://www.armsom.org/)
+## 来源与整理范围
 
-工具属于原作者，现有许可与声明予以保留；这里不把全部二进制重新声明为开源软件。具体封装记录见 [PACKAGING-NOTES.json](PACKAGING-NOTES.json)，来源与边界见 [NOTICE.md](NOTICE.md)。本文准备过程没有烧录或硬件实测。
+工具与原始说明仍属于 Rockchip 和各组件作者。ArmSoM 提供目录、校验和使用说明，不将原厂二进制声明为 ArmSoM 开发或统一套用开源许可证。部分组件包含自己的许可文本，按原文保留。
+
+设备信息和 HDCP 工具的干净重打包版本移除了历史日志、保存的配置和设备名称数据；AVB 包移除了示例密钥目录，执行程序保持原字节。请重新配置自己的测试环境和密钥。完整记录见 [NOTICE.md](NOTICE.md) 和 [PACKAGING-NOTES.json](PACKAGING-NOTES.json)。
+
+[ArmSoM 技术博客](https://blog.armsom.org/zh/) · [ArmSoM 产品手册](https://docs.armsom.org/) · [ArmSoM 官网](https://www.armsom.org/)

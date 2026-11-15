@@ -1,0 +1,4 @@
+downloads/** -text
+*.pdf -text
+*.md text eol=lf
+*.json text eol=lf
