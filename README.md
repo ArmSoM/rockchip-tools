@@ -6,7 +6,7 @@ Rockchip development-tool downloads, SHA-256 checksums, and usage references mai
 
 ## Download the right package
 
-The **2026-11-15 collection contains 24 tool families and 35 platform/version packages**. Binaries are stored directly in this Git repository. Download the individual packages below; cloning or downloading the entire repository retrieves approximately 569 MiB of packages. The large Linux PinDebug package is split into two parts, with reconstruction instructions at its download link.
+The **2026-11-15 collection contains 24 tool families: 34 platform/version packages are available and one is withheld for security review**. Binaries are stored directly in this Git repository. Download individual packages below; the current download files total approximately 552 MiB. A full Git clone also includes historical files. The large Linux PinDebug package is split into two parts, with reconstruction instructions at its download link.
 
 Version labels describe the supplied collection, not the latest vendor release. A host OS label does not imply support for every host CPU architecture or ArmSoM board. Match the board, SoC, carrier, storage, SDK/BSP and manual before using a tool.
 
@@ -23,7 +23,7 @@ Version labels describe the supplied collection, not the latest vendor release. 
 | DDR_UserTool | DDR test image workflow | [Windows / 1.41](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddr-user-tool/DDR_UserTool_v1.41.7z) |
 | rk_ddrbin_tool | DDR initialization binary configuration | [Linux / 1.01](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z) · [Windows / 1.07.2](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip) |
 | PinDebug | IOMUX, GPIO and voltage-domain inspection | [Linux / 1.11](https://github.com/ArmSoM/rockchip-tools/blob/main/downloads/pin-debug/README.md) · [Windows / 1.18](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/pin-debug/pin_debug_tool_v1.18_20250322_win.zip) |
-| USB SQ Tool | USB PHY signal tuning and test-command reference | [Windows / 1.5](https://github.com/ArmSoM/rockchip-tools/blob/main/SECURITY-REVIEW.md) |
+| USB SQ Tool | USB PHY signal tuning and test-command reference | [Windows / 1.5 — download withheld](https://github.com/ArmSoM/rockchip-tools/blob/main/SECURITY-REVIEW.md) |
 | rk_sign_tool and sign_tool | Firmware signing and signature verification | [Linux / 1.42](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/rk_sign_tool_v1.42_linux.zip) · [Linux / directory snapshot](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/rk_sign_tool-linux-directory-snapshot.zip) · [macOS / 1.2](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/sign_tool_v1.2_mac.zip) |
 | SecureBootTool | Historical Secure Boot preparation workflow | [Host to verify / 1.85](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/secureboot-tool/SecureBootTool_v1.85_foruser.zip) |
 | Linux SecurityAVB | AVB certificate and image preparation | [Linux / manual 2.2.5](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/linux-avb/linux-security-avb-without-keys.zip) |
