@@ -23,7 +23,7 @@ Version labels describe the supplied collection, not the latest vendor release. 
 | DDR_UserTool | DDR test image workflow | [Windows / 1.41](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddr-user-tool/DDR_UserTool_v1.41.7z) |
 | rk_ddrbin_tool | DDR initialization binary configuration | [Linux / 1.01](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z) · [Windows / 1.07.2](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip) |
 | PinDebug | IOMUX, GPIO and voltage-domain inspection | [Linux / 1.11](https://github.com/ArmSoM/rockchip-tools/blob/main/downloads/pin-debug/README.md) · [Windows / 1.18](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/pin-debug/pin_debug_tool_v1.18_20250322_win.zip) |
-| USB SQ Tool | USB PHY signal tuning and test-command reference | [Windows / 1.5](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/usb-sq-tool/Rockchip_USB_SQ_Tool_V1.5.7z) |
+| USB SQ Tool | USB PHY signal tuning and test-command reference | [Windows / 1.5](https://github.com/ArmSoM/rockchip-tools/blob/main/SECURITY-REVIEW.md) |
 | rk_sign_tool and sign_tool | Firmware signing and signature verification | [Linux / 1.42](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/rk_sign_tool_v1.42_linux.zip) · [Linux / directory snapshot](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/rk_sign_tool-linux-directory-snapshot.zip) · [macOS / 1.2](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/sign_tool_v1.2_mac.zip) |
 | SecureBootTool | Historical Secure Boot preparation workflow | [Host to verify / 1.85](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/secureboot-tool/SecureBootTool_v1.85_foruser.zip) |
 | Linux SecurityAVB | AVB certificate and image preparation | [Linux / manual 2.2.5](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/linux-avb/linux-security-avb-without-keys.zip) |
@@ -58,3 +58,34 @@ Original manuals remain inside their packages. [NOTICE.md](NOTICE.md) explains p
 ArmSoM's tool articles provide host setup, workflows, version boundaries and troubleshooting. Board-specific setup remains in [ArmSoM Docs](https://docs.armsom.org/). No hardware flashing, security provisioning or performance test was performed for this collection. Keep private keys, HDCP credentials and device databases outside this repository.
 
 Updates should retain distinct version labels and original notices. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Usage guides
+
+- [RKDevTool download and workflow: Loader, partitions and update.img](guides/en/rkdevtool.md)
+- [DriverAssitant 5.13: install Rockusb and ADB drivers on Windows](guides/en/driver-assistant.md)
+- [upgrade_tool download: command-line Rockchip firmware workflow](guides/en/upgrade-tool.md)
+- [boot_merger: prepare a Rockchip Loader without mixing DDR and boot components](guides/en/boot-merger.md)
+- [Firmware_Merger: flat RK, flat GPT and compact GPT images](guides/en/firmware-merger.md)
+- [afptool and rkImageMaker: understand and package Rockchip update.img](guides/en/firmware-pack-tools.md)
+- [Linux_Diff_Firmware: build a Rockchip differential OTA package](guides/en/diff-firmware.md)
+- [DDR Bandwidth Tool: measure memory traffic and interpret Rockchip counters](guides/en/ddr-bandwidth.md)
+- [DDR_UserTool 1.41: select DDR test configurations for a board](guides/en/ddr-user-tool.md)
+- [rk_ddrbin_tool: inspect and change DDR initialization parameters](guides/en/ddrbin-tool.md)
+- [PinDebug: inspect Rockchip IOMUX, GPIO and voltage domains](guides/en/pin-debug.md)
+- [USB SQ Tool 1.5: from USB eye-diagram diagnosis to PHY settings](guides/en/usb-sq-tool.md)
+- [rk_sign_tool and sign_tool: prepare and verify signed Rockchip firmware](guides/en/rk-sign-tool.md)
+- [SecureBootTool 1.85: understand a historical Rockchip Secure Boot workflow](guides/en/secureboot-tool.md)
+- [Linux SecurityAVB: keys, signed boot images and version boundaries](guides/en/linux-avb.md)
+- [Linux SecurityDM: inspect dm-verity and encrypted-rootfs packaging](guides/en/linux-dm.md)
+- [BoardProofTool 1.01: download, CPU ID handling and integration checklist](guides/en/board-proof.md)
+- [EfuseTool 1.42: prepare a traceable Secure Boot provisioning station](guides/en/efuse-tool.md)
+- [ParameterTool 1.2: review Rockchip partition parameters before flashing](guides/en/parameter-tool.md)
+- [RKDevInfoWriteTool: controlled serial-number and MAC provisioning](guides/en/devinfo-write.md)
+- [RKPCBATool 1.2.1: configure Linux board functional tests and operator checks](guides/en/pcba-tool.md)
+- [HDCP Key Writer: package authorized keys and control device provisioning](guides/en/hdcp-key-writer.md)
+- [SDDiskTool 1.78: distinguish SD boot, upgrade and PCBA media](guides/en/sd-disk-tool.md)
+- [programmer_image_tool: convert update.img for eMMC, SPI NOR and NAND programmers](guides/en/programmer-image-tool.md)
+
+[EN](guides/en/) · [中文](guides/zh/) · [RU](guides/ru/) · [DE](guides/de/)
+
+[USB SQ Tool 1.5: download withheld / 暂停下载](SECURITY-REVIEW.md)

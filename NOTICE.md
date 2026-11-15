@@ -2,7 +2,7 @@
 
 ArmSoM maintains this catalog and accompanying usage guides. Rockchip and the respective upstream contributors remain the authors of the supplied third-party tools and documents. Hosting a binary here does not make its source code available and does not relicense it as MIT, Apache, or another open-source license.
 
-This release is a dated snapshot of the Rockchip tool collection supplied to ArmSoM, not a statement that every binary is the newest available release. Individual archives retain their embedded licenses, notices and original manuals. A dependency license (for example Qt's LGPL notice) is not a blanket license for every bundled application.
+This collection is a dated snapshot of the Rockchip tools supplied to ArmSoM, not a statement that every binary is the newest available release. Individual archives retain their embedded licenses, notices and original manuals. A dependency license (for example Qt's LGPL notice) is not a blanket license for every bundled application.
 
 `catalog.json` records source-relative paths, original archive hashes, download hashes, version labels and repackaging details. `PACKAGING-NOTES.json` identifies deliberately omitted files. The original source collection was not modified.
 

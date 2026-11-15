@@ -322,14 +322,16 @@
       "downloads": [
         {
           "file": "downloads/usb-sq-tool/Rockchip_USB_SQ_Tool_V1.5.7z",
-          "url": "https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/usb-sq-tool/Rockchip_USB_SQ_Tool_V1.5.7z",
+          "url": "https://github.com/ArmSoM/rockchip-tools/blob/main/SECURITY-REVIEW.md",
           "platform": "Windows",
           "version_label": "1.5",
           "bytes": 17253972,
           "sha256": "9b2ca5e6773bcb88e2bd73c57044ca16c1f2e16d81b1f010569724cb66550b37",
           "source": "windows/Rockchip_USB_SQ_Tool_V1.5.7z",
           "source_sha256": "9b2ca5e6773bcb88e2bd73c57044ca16c1f2e16d81b1f010569724cb66550b37",
-          "packaging": "original archive"
+          "packaging": "original archive",
+          "status": "withheld-security-review",
+          "security_note": "Windows Defender quarantined the loose 1.5 executable as Trojan:Win32/Pomal!rfn; no execution recorded. Download withheld pending vendor verification."
         }
       ]
     },
