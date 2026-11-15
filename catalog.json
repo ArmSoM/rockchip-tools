@@ -1,0 +1,583 @@
+{
+  "snapshot": "2026-11-15",
+  "scope": "User-supplied Rockchip tools; not a claim of latest versions or universal board support",
+  "tools": [
+    {
+      "id": "rkdevtool",
+      "name": "RKDevTool",
+      "summary": "Windows Rockusb flashing GUI",
+      "article_slug": "rockchip-tool-rkdevtool",
+      "downloads": [
+        {
+          "file": "downloads/rkdevtool/RKDevTool-windows-directory-snapshot.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/RKDevTool-windows-directory-snapshot.zip",
+          "platform": "Windows",
+          "version_label": "3.37 release notes",
+          "bytes": 4067211,
+          "sha256": "d453bd22c00141f12ef39469629d478aa61304763bdb2977288d6f019a74f20c",
+          "source": "windows/RKDevTool",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        }
+      ]
+    },
+    {
+      "id": "driver-assistant",
+      "name": "DriverAssitant",
+      "summary": "Windows Rockusb and ADB driver installation",
+      "article_slug": "rockchip-tool-driver-assistant",
+      "downloads": [
+        {
+          "file": "downloads/driver-assistant/DriverAssitant_v5.13.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/DriverAssitant_v5.13.zip",
+          "platform": "Windows",
+          "version_label": "5.13",
+          "bytes": 9775583,
+          "sha256": "b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9",
+          "source": "windows/DriverAssitant_v5.13.zip",
+          "source_sha256": "b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "upgrade-tool",
+      "name": "upgrade_tool",
+      "summary": "Command-line firmware flashing",
+      "article_slug": "rockchip-tool-upgrade-tool",
+      "downloads": [
+        {
+          "file": "downloads/upgrade-tool/upgrade_tool_v2.44_for_linux.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/upgrade_tool_v2.44_for_linux.zip",
+          "platform": "Linux",
+          "version_label": "2.44",
+          "bytes": 1329816,
+          "sha256": "b779239cb1dc6cadd823520439e4163cf223145d048e6b5f9eaf1735b407cff8",
+          "source": "linux/Linux_Upgrade_Tool/upgrade_tool_v2.44_for_linux.zip",
+          "source_sha256": "b779239cb1dc6cadd823520439e4163cf223145d048e6b5f9eaf1735b407cff8",
+          "packaging": "original archive"
+        },
+        {
+          "file": "downloads/upgrade-tool/upgrade_tool_v2.13_for_mac.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/upgrade_tool_v2.13_for_mac.zip",
+          "platform": "macOS",
+          "version_label": "2.13",
+          "bytes": 529153,
+          "sha256": "d49db00e892b72a1760b9766b5e4ab998e75a17a37cb3acc8bf13b981b0ffc34",
+          "source": "mac/upgrade_tool/upgrade_tool_v2.13_for_mac.zip",
+          "source_sha256": "d49db00e892b72a1760b9766b5e4ab998e75a17a37cb3acc8bf13b981b0ffc34",
+          "packaging": "original archive"
+        },
+        {
+          "file": "downloads/upgrade-tool/upgrade_tool_v2.46.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/upgrade_tool_v2.46.zip",
+          "platform": "Windows",
+          "version_label": "2.46",
+          "bytes": 727727,
+          "sha256": "de1dc7ce00ed5cfdaa0432f1c7e3efaf096e5dbb7e0ad851345739f6342c06dc",
+          "source": "windows/upgrade_tool_v2.46.zip",
+          "source_sha256": "de1dc7ce00ed5cfdaa0432f1c7e3efaf096e5dbb7e0ad851345739f6342c06dc",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "boot-merger",
+      "name": "boot_merger",
+      "summary": "Loader packaging and unpacking",
+      "article_slug": "rockchip-tool-boot-merger",
+      "downloads": [
+        {
+          "file": "downloads/boot-merger/boot_merger-linux-directory-snapshot.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/boot_merger-linux-directory-snapshot.zip",
+          "platform": "Linux",
+          "version_label": "1.35 release notes",
+          "bytes": 921355,
+          "sha256": "185fb0b12c95317f70a683919f36486153e7219a60c30bd3c9ef0a5019783bbb",
+          "source": "linux/boot_merger",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        },
+        {
+          "file": "downloads/boot-merger/boot_merger_v1.3_mac.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/boot_merger_v1.3_mac.zip",
+          "platform": "macOS",
+          "version_label": "1.3",
+          "bytes": 97351,
+          "sha256": "c9427f5e6448c610dae2e450ad1e245d03c39fd36756bbb02b78f20a0228f64f",
+          "source": "mac/boot_merger/boot_merger_v1.3_mac.zip",
+          "source_sha256": "c9427f5e6448c610dae2e450ad1e245d03c39fd36756bbb02b78f20a0228f64f",
+          "packaging": "original archive"
+        },
+        {
+          "file": "downloads/boot-merger/boot_merger_v1.32.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/boot_merger_v1.32.zip",
+          "platform": "Windows",
+          "version_label": "1.32",
+          "bytes": 7080412,
+          "sha256": "00e12d8683c73c62df0d10102d284407721ab90310d10da23e8e090cdac124f9",
+          "source": "windows/boot_merger_v1.32.zip",
+          "source_sha256": "00e12d8683c73c62df0d10102d284407721ab90310d10da23e8e090cdac124f9",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "firmware-merger",
+      "name": "Firmware_Merger",
+      "summary": "Flat and compact flash image generation",
+      "article_slug": "rockchip-tool-firmware-merger",
+      "downloads": [
+        {
+          "file": "downloads/firmware-merger/firmware-merger-linux-directory-snapshot.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/firmware-merger-linux-directory-snapshot.zip",
+          "platform": "Linux",
+          "version_label": "directory snapshot",
+          "bytes": 57507,
+          "sha256": "798ce66df5ee1f22cd96f811bf9140e5e9f4f0f3977a4ef37acd54554d6992ea",
+          "source": "linux/Firmware_Merger",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        }
+      ]
+    },
+    {
+      "id": "firmware-pack-tools",
+      "name": "afptool, rkImageMaker and rockdev",
+      "summary": "Partition-image and update.img packaging",
+      "article_slug": "rockchip-tool-firmware-pack-tools",
+      "downloads": [
+        {
+          "file": "downloads/firmware-pack-tools/rockdev-linux-directory-snapshot.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/rockdev-linux-directory-snapshot.zip",
+          "platform": "Linux",
+          "version_label": "directory snapshot",
+          "bytes": 1614007,
+          "sha256": "06049f3eb612de5d1a3866bffe4b1d8d7dabaef4fd38b07decd79380f5af5a36",
+          "source": "linux/Linux_Pack_Firmware",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        },
+        {
+          "file": "downloads/firmware-pack-tools/rockdev_v2.1_mac.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/rockdev_v2.1_mac.zip",
+          "platform": "macOS",
+          "version_label": "2.1",
+          "bytes": 87511,
+          "sha256": "af29d720edba7a0f082f984d57adf5a09b81a8df6deebf7f158aeedabd4018e7",
+          "source": "mac/rockdev/rockdev_v2.1_mac.zip",
+          "source_sha256": "af29d720edba7a0f082f984d57adf5a09b81a8df6deebf7f158aeedabd4018e7",
+          "packaging": "original archive"
+        },
+        {
+          "file": "downloads/firmware-pack-tools/RKImageMaker_20230109.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/RKImageMaker_20230109.zip",
+          "platform": "Windows",
+          "version_label": "20230109",
+          "bytes": 4181454,
+          "sha256": "887863bb2563ba0ab9c77b846a26f47fe7774f95152d66253c4de910419591cd",
+          "source": "windows/RKImageMaker_20230109.zip",
+          "source_sha256": "887863bb2563ba0ab9c77b846a26f47fe7774f95152d66253c4de910419591cd",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "diff-firmware",
+      "name": "Linux_Diff_Firmware",
+      "summary": "Differential OTA image packaging",
+      "article_slug": "rockchip-tool-diff-firmware",
+      "downloads": [
+        {
+          "file": "downloads/diff-firmware/linux-diff-firmware-directory-snapshot.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/linux-diff-firmware-directory-snapshot.zip",
+          "platform": "Linux",
+          "version_label": "directory snapshot",
+          "bytes": 1568320,
+          "sha256": "e13711865267ea4ee1f71c048d356bc5dff2de0f24e3d1b71dcd4cfb159b45b9",
+          "source": "linux/Linux_Diff_Firmware",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        }
+      ]
+    },
+    {
+      "id": "ddr-bandwidth",
+      "name": "DDR Bandwidth Tool",
+      "summary": "DDR bandwidth and utilization measurement",
+      "article_slug": "rockchip-tool-ddr-bandwidth",
+      "downloads": [
+        {
+          "file": "downloads/ddr-bandwidth/ddr-bandwidth-linux-directory-snapshot.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/ddr-bandwidth-linux-directory-snapshot.zip",
+          "platform": "Linux target",
+          "version_label": "manual 1.4.1",
+          "bytes": 2078087,
+          "sha256": "198ec5ad23aedee97518936fb4c2810f3d92c415269fad56788e833811af612d",
+          "source": "linux/Linux_DDR_Bandwidth_Tool",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        }
+      ]
+    },
+    {
+      "id": "ddr-user-tool",
+      "name": "DDR_UserTool",
+      "summary": "DDR test image workflow",
+      "article_slug": "rockchip-tool-ddr-user-tool",
+      "downloads": [
+        {
+          "file": "downloads/ddr-user-tool/DDR_UserTool_v1.41.7z",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/DDR_UserTool_v1.41.7z",
+          "platform": "Windows",
+          "version_label": "1.41",
+          "bytes": 3991443,
+          "sha256": "f53d06ad782e9fa85f5f098572fc20bd82945886936b1df5faf6ebf6ea892416",
+          "source": "windows/DDR_UserTool_v1.41.7z",
+          "source_sha256": "f53d06ad782e9fa85f5f098572fc20bd82945886936b1df5faf6ebf6ea892416",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "ddrbin-tool",
+      "name": "rk_ddrbin_tool",
+      "summary": "DDR initialization binary configuration",
+      "article_slug": "rockchip-tool-ddrbin-tool",
+      "downloads": [
+        {
+          "file": "downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/rk_ddrbin_tool_V1.01.7z",
+          "platform": "Linux",
+          "version_label": "1.01",
+          "bytes": 81801567,
+          "sha256": "db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212",
+          "source": "linux/rk_ddrbin_tool_V1.01.7z",
+          "source_sha256": "db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212",
+          "packaging": "original archive"
+        },
+        {
+          "file": "downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/rk_ddrBin_tool_V1.07.2.zip",
+          "platform": "Windows",
+          "version_label": "1.07.2",
+          "bytes": 60304091,
+          "sha256": "618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1",
+          "source": "windows/rk_ddrBin_tool_V1.07.2.zip",
+          "source_sha256": "618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "pin-debug",
+      "name": "PinDebug",
+      "summary": "IOMUX, GPIO and voltage-domain inspection",
+      "article_slug": "rockchip-tool-pin-debug",
+      "downloads": [
+        {
+          "file": "downloads/pin-debug/pin_debug_tool_v1.11_for_linux.tar.gz",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/pin_debug_tool_v1.11_for_linux.tar.gz",
+          "platform": "Linux",
+          "version_label": "1.11",
+          "bytes": 172979799,
+          "sha256": "16cb25b8fc2533e8f730a790c7486ab5042baa964b3bdb95a161ddce143c4a34",
+          "source": "linux/PinDebug/pin_debug_tool_v1.11_for_linux.tar",
+          "source_sha256": "90175e394246f950d6fe61c8b38505c338fbc86a8ab885e0f2af825396cc5c47",
+          "packaging": "gzip wrapper around unchanged upstream tar"
+        },
+        {
+          "file": "downloads/pin-debug/pin_debug_tool_v1.18_20250322_win.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/pin_debug_tool_v1.18_20250322_win.zip",
+          "platform": "Windows",
+          "version_label": "1.18",
+          "bytes": 53132929,
+          "sha256": "88c550ee9a578eaa451a9b8a05b3d088247dc63dd9bd426b832191994dc6a7d5",
+          "source": "windows/pin_debug_tool_v1.18_20250322_win.zip",
+          "source_sha256": "88c550ee9a578eaa451a9b8a05b3d088247dc63dd9bd426b832191994dc6a7d5",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "usb-sq-tool",
+      "name": "USB SQ Tool",
+      "summary": "USB PHY signal tuning and test-command reference",
+      "article_slug": "rockchip-tool-usb-sq-tool",
+      "downloads": [
+        {
+          "file": "downloads/usb-sq-tool/Rockchip_USB_SQ_Tool_V1.5.7z",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/Rockchip_USB_SQ_Tool_V1.5.7z",
+          "platform": "Windows",
+          "version_label": "1.5",
+          "bytes": 17253972,
+          "sha256": "9b2ca5e6773bcb88e2bd73c57044ca16c1f2e16d81b1f010569724cb66550b37",
+          "source": "windows/Rockchip_USB_SQ_Tool_V1.5.7z",
+          "source_sha256": "9b2ca5e6773bcb88e2bd73c57044ca16c1f2e16d81b1f010569724cb66550b37",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "rk-sign-tool",
+      "name": "rk_sign_tool and sign_tool",
+      "summary": "Firmware signing and signature verification",
+      "article_slug": "rockchip-tool-rk-sign-tool",
+      "downloads": [
+        {
+          "file": "downloads/rk-sign-tool/rk_sign_tool_v1.42_linux.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/rk_sign_tool_v1.42_linux.zip",
+          "platform": "Linux",
+          "version_label": "1.42",
+          "bytes": 22457713,
+          "sha256": "799a0fad6e363b141e244580479ed8434e05c070d924db8a289e277e50a7ca1d",
+          "source": "linux/rk_sign_tool_v1.42_linux.zip",
+          "source_sha256": "799a0fad6e363b141e244580479ed8434e05c070d924db8a289e277e50a7ca1d",
+          "packaging": "original archive"
+        },
+        {
+          "file": "downloads/rk-sign-tool/rk_sign_tool-linux-directory-snapshot.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/rk_sign_tool-linux-directory-snapshot.zip",
+          "platform": "Linux",
+          "version_label": "directory snapshot",
+          "bytes": 64810317,
+          "sha256": "db3cd185e5e38b886be0a162a92d3400368acfb5684744b8e91af5ef9cdeb06e",
+          "source": "linux/rk_sign_tool",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        },
+        {
+          "file": "downloads/rk-sign-tool/sign_tool_v1.2_mac.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/sign_tool_v1.2_mac.zip",
+          "platform": "macOS",
+          "version_label": "1.2",
+          "bytes": 1615595,
+          "sha256": "30ee08cb35681b735f1636bcc9215af64c4b6b5ca303a0889509be32209ea8ed",
+          "source": "mac/sign_tool/sign_tool_v1.2_mac.zip",
+          "source_sha256": "30ee08cb35681b735f1636bcc9215af64c4b6b5ca303a0889509be32209ea8ed",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "secureboot-tool",
+      "name": "SecureBootTool",
+      "summary": "Historical Secure Boot preparation workflow",
+      "article_slug": "rockchip-tool-secureboot-tool",
+      "downloads": [
+        {
+          "file": "downloads/secureboot-tool/SecureBootTool_v1.85_foruser.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/SecureBootTool_v1.85_foruser.zip",
+          "platform": "Host to verify",
+          "version_label": "1.85",
+          "bytes": 1737425,
+          "sha256": "d241ccc7503a3202c68a036f51cdd7f5d2db2a7594eb749ec19e2ffb2c67681a",
+          "source": "linux/Linux_SecureBoot/SecureBootTool_v1.85_foruser.zip",
+          "source_sha256": "d241ccc7503a3202c68a036f51cdd7f5d2db2a7594eb749ec19e2ffb2c67681a",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "linux-avb",
+      "name": "Linux SecurityAVB",
+      "summary": "AVB certificate and image preparation",
+      "article_slug": "rockchip-tool-linux-avb",
+      "downloads": [
+        {
+          "file": "downloads/linux-avb/linux-security-avb-without-keys.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/linux-security-avb-without-keys.zip",
+          "platform": "Linux",
+          "version_label": "manual 2.2.5",
+          "bytes": 2282698,
+          "sha256": "fc7eae22caeadd51d85723b65451c70e88475a2c9ba7e7f5394ca1314688d17d",
+          "source": "linux/Linux_SecurityAVB",
+          "source_sha256": null,
+          "packaging": "ArmSoM archive of supplied directory; executable bytes unchanged"
+        }
+      ]
+    },
+    {
+      "id": "linux-dm",
+      "name": "Linux SecurityDM",
+      "summary": "Historical dm-verity root filesystem packaging",
+      "article_slug": "rockchip-tool-linux-dm",
+      "downloads": [
+        {
+          "file": "downloads/linux-dm/Linux_SecurityDM_v1_01.tar.gz",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/Linux_SecurityDM_v1_01.tar.gz",
+          "platform": "Linux",
+          "version_label": "1.01",
+          "bytes": 5393885,
+          "sha256": "2db8bc9618a326f624e5bc519f95ac00ec33df6db47ba82ab446367fa4de5912",
+          "source": "linux/Linux_SecurityDM_v1_01.tar.gz",
+          "source_sha256": "2db8bc9618a326f624e5bc519f95ac00ec33df6db47ba82ab446367fa4de5912",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "board-proof",
+      "name": "BoardProofTool",
+      "summary": "Board-protection configuration workflow",
+      "article_slug": "rockchip-tool-board-proof",
+      "downloads": [
+        {
+          "file": "downloads/board-proof/BoardProofTool_v1.01_20240823_02.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/BoardProofTool_v1.01_20240823_02.zip",
+          "platform": "Windows",
+          "version_label": "1.01",
+          "bytes": 11318723,
+          "sha256": "72c732d7c91ba7742c4c36d2a549171f9289d820c3d50aad468e38cdd7806029",
+          "source": "windows/BoardProofTool_v1.01_20240823_02.zip",
+          "source_sha256": "72c732d7c91ba7742c4c36d2a549171f9289d820c3d50aad468e38cdd7806029",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "efuse-tool",
+      "name": "EfuseTool",
+      "summary": "eFuse provisioning workflow",
+      "article_slug": "rockchip-tool-efuse-tool",
+      "downloads": [
+        {
+          "file": "downloads/efuse-tool/EfuseTool_v1.42.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/EfuseTool_v1.42.zip",
+          "platform": "Windows",
+          "version_label": "1.42",
+          "bytes": 731921,
+          "sha256": "abb81d072ad6a7cec31d7a7c5a3f72d9bfe57544ee4d8715e4c031b4bd780fc9",
+          "source": "windows/EfuseTool_v1.42.zip",
+          "source_sha256": "abb81d072ad6a7cec31d7a7c5a3f72d9bfe57544ee4d8715e4c031b4bd780fc9",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "parameter-tool",
+      "name": "ParameterTool",
+      "summary": "Rockchip partition parameter editing",
+      "article_slug": "rockchip-tool-parameter-tool",
+      "downloads": [
+        {
+          "file": "downloads/parameter-tool/ParameterTool_v1.2.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/ParameterTool_v1.2.zip",
+          "platform": "Windows",
+          "version_label": "1.2",
+          "bytes": 19443215,
+          "sha256": "46e4cda5ca71bd12444fc75c517753fe0f3fda9db1ce3917d1a5a3f48e92a6f2",
+          "source": "windows/ParameterTool_v1.2.zip",
+          "source_sha256": "46e4cda5ca71bd12444fc75c517753fe0f3fda9db1ce3917d1a5a3f48e92a6f2",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "devinfo-write",
+      "name": "RKDevInfoWriteTool",
+      "summary": "Serial number and device information provisioning",
+      "article_slug": "rockchip-tool-devinfo-write",
+      "downloads": [
+        {
+          "file": "downloads/devinfo-write/RKDevInfoWriteTool-v1.3.7-clean.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/RKDevInfoWriteTool-v1.3.7-clean.zip",
+          "platform": "Windows",
+          "version_label": "1.3.7",
+          "bytes": 4705029,
+          "sha256": "66a3a94142470356adc8c7e3a2b9ba2deee60fd3bb7bcbba9c196c2534eb6f3a",
+          "source": "windows/RKDevInfoWriteTool-v1.3.7.zip",
+          "source_sha256": "d0f5b4ff17a0edddad2492970326e5ec5c38db8a1592f685e2a5780c30436234",
+          "packaging": "ArmSoM clean repack; session logs, device payload and saved config omitted; executable bytes unchanged"
+        }
+      ]
+    },
+    {
+      "id": "pcba-tool",
+      "name": "RKPCBATool",
+      "summary": "Board production-test integration",
+      "article_slug": "rockchip-tool-pcba-tool",
+      "downloads": [
+        {
+          "file": "downloads/pcba-tool/RKPCBATool_v1.2.1_20251226.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/RKPCBATool_v1.2.1_20251226.zip",
+          "platform": "Windows host + Linux target",
+          "version_label": "1.2.1",
+          "bytes": 30242682,
+          "sha256": "ec3747fa2360e8e1793920882d7ec51a4aa1087a4cfab5d3c218f677999440bc",
+          "source": "windows/RKPCBATool_v1.2.1_20251226.zip",
+          "source_sha256": "ec3747fa2360e8e1793920882d7ec51a4aa1087a4cfab5d3c218f677999440bc",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "hdcp-key-writer",
+      "name": "HDCP Key Writer",
+      "summary": "Authorized HDCP key provisioning",
+      "article_slug": "rockchip-tool-hdcp-key-writer",
+      "downloads": [
+        {
+          "file": "downloads/hdcp-key-writer/Rockchip_HdcpKey_Writer_V1.0.5-clean.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/Rockchip_HdcpKey_Writer_V1.0.5-clean.zip",
+          "platform": "Windows",
+          "version_label": "1.0.5",
+          "bytes": 6165944,
+          "sha256": "39291cd73a8b979de8e70c0109cffecd40f72e26788951a72296449de67c6e3b",
+          "source": "windows/Rockchip_HdcpKey_Writer_V1.0.5.7z",
+          "source_sha256": "607b6c067c73eb36706010e5e7a8d7f6c04e2e1a891113b8e95f54e6d599a1f0",
+          "packaging": "ArmSoM clean repack; session logs, device payload and saved config omitted; executable bytes unchanged"
+        }
+      ]
+    },
+    {
+      "id": "sd-disk-tool",
+      "name": "SDDiskTool",
+      "summary": "SD boot and upgrade media preparation",
+      "article_slug": "rockchip-tool-sd-disk-tool",
+      "downloads": [
+        {
+          "file": "downloads/sd-disk-tool/SDDiskTool_v1.78.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/SDDiskTool_v1.78.zip",
+          "platform": "Windows",
+          "version_label": "1.78",
+          "bytes": 331797,
+          "sha256": "4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08",
+          "source": "windows/SDDiskTool_v1.78.zip",
+          "source_sha256": "4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08",
+          "packaging": "original archive"
+        }
+      ]
+    },
+    {
+      "id": "programmer-image-tool",
+      "name": "programmer_image_tool",
+      "summary": "eMMC, SPI NOR and NAND programmer images",
+      "article_slug": "rockchip-tool-programmer-image-tool",
+      "downloads": [
+        {
+          "file": "downloads/programmer-image-tool/programmer_image_tool_v1.26_linux.tar.gz",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/programmer_image_tool_v1.26_linux.tar.gz",
+          "platform": "Linux",
+          "version_label": "1.26",
+          "bytes": 963137,
+          "sha256": "ea38df34e97cd697aa53d09af06fa1ff2b0847fe2c9699c49d1890509cc5c0d0",
+          "source": "linux/programming_image_tool/programmer_image_tool_v1.26_linux.tar",
+          "source_sha256": "1f62dc99a50b9b4bed0de22704e05e91a7f962f3bc9ca89be1d24f8dae8d3739",
+          "packaging": "gzip wrapper around unchanged upstream tar"
+        },
+        {
+          "file": "downloads/programmer-image-tool/programmer_image_tool_v1.28.zip",
+          "url": "https://github.com/ArmSoM/rockchip-tools/releases/download/2026.11.15/programmer_image_tool_v1.28.zip",
+          "platform": "Windows",
+          "version_label": "1.28",
+          "bytes": 438813,
+          "sha256": "696d07d8232a637ef59b724d0c0522e500fc9f26571c2633d96271ffce48e56f",
+          "source": "windows/programmer_image_tool_v1.28.zip",
+          "source_sha256": "696d07d8232a637ef59b724d0c0522e500fc9f26571c2633d96271ffce48e56f",
+          "packaging": "original archive"
+        }
+      ]
+    }
+  ]
+}

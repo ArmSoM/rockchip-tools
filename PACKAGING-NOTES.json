@@ -1,0 +1,61 @@
+[
+  {
+    "tool": "linux-avb",
+    "archive": "downloads/linux-avb/linux-security-avb-without-keys.zip",
+    "excluded": [
+      "avb_keys\\metadata.bin",
+      "avb_keys\\permanent_attributes.bin",
+      "avb_keys\\pik_certificate.bin",
+      "avb_keys\\product_id.bin",
+      "avb_keys\\psk_certificate.bin",
+      "avb_keys\\puk_certificate.bin",
+      "avb_keys\\testkey_pik.pem",
+      "avb_keys\\testkey_prk.pem",
+      "avb_keys\\testkey_psk.pem",
+      "avb_keys\\testkey_puk.pem"
+    ]
+  },
+  {
+    "tool": "devinfo-write",
+    "archive": "downloads/devinfo-write/RKDevInfoWriteTool-v1.3.7-clean.zip",
+    "excluded": [
+      "RKDevInfoWriteTool-v1.3.7/config.ini",
+      "RKDevInfoWriteTool-v1.3.7/DEVNAME.bin",
+      "RKDevInfoWriteTool-v1.3.7/log/2024-08-19_20.27.11.txt",
+      "RKDevInfoWriteTool-v1.3.7/log/2025-04-02_09.08.48.txt",
+      "RKDevInfoWriteTool-v1.3.7/log/2025-04-07_20.23.10.txt",
+      "RKDevInfoWriteTool-v1.3.7/log/2025-04-11_08.49.47.txt",
+      "RKDevInfoWriteTool-v1.3.7/log/2025-04-14_14.17.04.txt"
+    ]
+  },
+  {
+    "tool": "hdcp-key-writer",
+    "archive": "downloads/hdcp-key-writer/Rockchip_HdcpKey_Writer_V1.0.5-clean.zip",
+    "excluded": [
+      "Rockchip_HdcpKey_Writer/config.ini",
+      "Rockchip_HdcpKey_Writer/KeyConvertor/config.ini",
+      "Rockchip_HdcpKey_Writer/KeyConvertor/Log/Log2022-12-22.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_12.44.38.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_12.44.42.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_12.48.46.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_12.48.54.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_12.49.05.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_12.49.44.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_14.20.48.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_14.21.16.txt",
+      "Rockchip_HdcpKey_Writer/log/adb/2023-02-13_14.24.48.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.42.16.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.43.40.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.43.49.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.44.38.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.44.42.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.48.46.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.48.54.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.49.05.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_12.49.44.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_14.20.48.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_14.21.16.txt",
+      "Rockchip_HdcpKey_Writer/log/log-2023-02-13/2023-02-13_14.24.48.txt"
+    ]
+  }
+]

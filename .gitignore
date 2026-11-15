@@ -1,0 +1,8 @@
+/downloads/
+*.pem
+*.key
+*.skf
+*.pfx
+*.p12
+*.log
+__pycache__/
