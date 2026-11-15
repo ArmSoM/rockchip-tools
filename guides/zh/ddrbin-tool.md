@@ -29,26 +29,16 @@ DDR binary 在 Linux 启动前控制内存初始化。`rk_ddrbin_tool` 修改受
 
 本文依据本次工具包及原始资料整理。使用前核对具体板卡、SoC、载板、SDK/BSP 与主机架构。本次未执行烧录、生产配置、寄存器写入或硬件测试；提供下载不代表所有 ArmSoM 产品均支持。
 
-## 工具下载、版本与 SHA-256
+## GitHub 工具目录、版本与 SHA-256
 
-下载对应压缩包，校验哈希后完整解压。Linux PinDebug 分卷请先按链接中的说明还原；下方该项哈希对应合并后的完整文件。
+打开 GitHub 对应目录后选择所需平台和版本，再校验文件哈希并完整解压。下方链接均为仓库目录入口。
 
-| 主机 / 版本 | 下载包 |
-|---|---|
-| Linux / 1.01 | [rk_ddrbin_tool_V1.01.7z](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z) |
-| Windows / 1.07.2 | [rk_ddrBin_tool_V1.07.2.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip) |
+[前往 GitHub 对应工具目录](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddrbin-tool)
 
-**rk_ddrbin_tool_V1.01.7z — SHA-256**
-
-```text
-db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
-```
-
-**rk_ddrBin_tool_V1.07.2.zip — SHA-256**
-
-```text
-618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1
-```
+| 平台 / 版本 | 文件 | SHA-256 |
+|---|---|---|
+| Linux / 1.01 | `rk_ddrbin_tool_V1.01.7z` | `db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212` |
+| Windows / 1.07.2 | `rk_ddrBin_tool_V1.07.2.zip` | `618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -59,9 +49,9 @@ db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
 ## 继续阅读相关流程
 
 - [Rockchip DDR 完整开发指南：频率、容量、验证、眼图与 ECC](https://blog.armsom.org/zh/articles/037-rockchip-ddr/)
-- [boot_merger 使用流程：正确组合 DDR、下载代码与 Loader](boot-merger.md)
-- [DDR_UserTool 1.41：为板卡选择 DDR 测试配置](ddr-user-tool.md)
-- [Rockchip 工具下载与使用指南索引](../../README.md)
+- [boot_merger 使用流程：正确组合 DDR、下载代码与 Loader](https://blog.armsom.org/zh/articles/rockchip-tool-boot-merger/)
+- [DDR_UserTool 1.41：为板卡选择 DDR 测试配置](https://blog.armsom.org/zh/articles/rockchip-tool-ddr-user-tool/)
+- [Rockchip 工具下载与使用指南索引](https://blog.armsom.org/zh/articles/rockchip-tools-download-guide/)
 
 ## 查找准确的 ArmSoM 板卡资料
 

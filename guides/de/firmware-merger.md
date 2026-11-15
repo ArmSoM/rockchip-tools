@@ -39,19 +39,15 @@ Fehlende Dateien, überlappende Partitionen oder eine Verwechslung von Compact u
 
 Dieser Ablauf basiert auf der Dokumentation der Sammlung. Prüfen Sie Board, SoC, Trägerplatine, SDK/BSP und Host-Architektur. Flashen, Provisionieren, Registerschreiben und Hardwaretests wurden nicht ausgeführt. Ein verfügbares Paket belegt keine Unterstützung aller ArmSoM-Produkte.
 
-## Download, Versionen und SHA-256
+## GitHub-Werkzeugverzeichnis, Versionen und SHA-256
 
-Passendes Archiv laden, Hash prüfen und den vollständigen Ordner entpacken. Linux PinDebug zuerst nach verlinkter Anleitung zusammensetzen; der angegebene Hash gehört zur vollständigen Datei.
+Das passende GitHub-Verzeichnis öffnen, Host und Version wählen, Dateihash prüfen und vollständig entpacken. Die folgenden Links öffnen Repository-Verzeichnisse.
 
-| Host / Version | Paket |
-|---|---|
-| Linux / directory snapshot | [firmware-merger-linux-directory-snapshot.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-merger/firmware-merger-linux-directory-snapshot.zip) |
+[Werkzeugverzeichnis auf GitHub öffnen](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/firmware-merger)
 
-**firmware-merger-linux-directory-snapshot.zip — SHA-256**
-
-```text
-798ce66df5ee1f22cd96f811bf9140e5e9f4f0f3977a4ef37acd54554d6992ea
-```
+| Plattform / Version | Datei | SHA-256 |
+|---|---|---|
+| Linux / directory snapshot | `firmware-merger-linux-directory-snapshot.zip` | `798ce66df5ee1f22cd96f811bf9140e5e9f4f0f3977a4ef37acd54554d6992ea` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -61,9 +57,9 @@ Passendes Archiv laden, Hash prüfen und den vollständigen Ordner entpacken. Li
 
 ## Verwandte Arbeitsabläufe
 
-- [afptool und rkImageMaker: Rockchip update.img aufbauen und prüfen](firmware-pack-tools.md)
-- [programmer_image_tool: Abbilder für eMMC-, SPI-NOR- und NAND-Programmer](programmer-image-tool.md)
-- [Rockchip-Werkzeug- und Downloadübersicht](../../README.md)
+- [afptool und rkImageMaker: Rockchip update.img aufbauen und prüfen](https://blog.armsom.org/de/articles/rockchip-tool-firmware-pack-tools/)
+- [programmer_image_tool: Abbilder für eMMC-, SPI-NOR- und NAND-Programmer](https://blog.armsom.org/de/articles/rockchip-tool-programmer-image-tool/)
+- [Rockchip-Werkzeug- und Downloadübersicht](https://blog.armsom.org/de/articles/rockchip-tools-download-guide/)
 
 ## Passende ArmSoM-Boarddokumentation
 

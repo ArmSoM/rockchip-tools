@@ -29,26 +29,16 @@ DDR binary инициализирует память до запуска Linux. 
 
 Руководство составлено по документации этой коллекции. Проверьте плату, SoC, плату-носитель, SDK/BSP и архитектуру хоста. Прошивка, provisioning, запись регистров и аппаратные испытания не выполнялись. Наличие пакета не подтверждает поддержку всех изделий ArmSoM.
 
-## Загрузка, версии и SHA-256
+## Каталог GitHub, версии и SHA-256
 
-Выберите архив, проверьте хеш и распакуйте весь каталог. Разделённый Linux PinDebug сначала восстановите по инструкции; его указанный хеш относится к целому файлу.
+Откройте соответствующий каталог GitHub, выберите платформу и версию, проверьте хеш и распакуйте весь каталог. Ссылки ниже ведут в каталоги репозитория.
 
-| Хост / версия | Пакет |
-|---|---|
-| Linux / 1.01 | [rk_ddrbin_tool_V1.01.7z](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z) |
-| Windows / 1.07.2 | [rk_ddrBin_tool_V1.07.2.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip) |
+[Открыть каталог инструмента на GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddrbin-tool)
 
-**rk_ddrbin_tool_V1.01.7z — SHA-256**
-
-```text
-db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
-```
-
-**rk_ddrBin_tool_V1.07.2.zip — SHA-256**
-
-```text
-618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1
-```
+| Платформа / версия | Файл | SHA-256 |
+|---|---|---|
+| Linux / 1.01 | `rk_ddrbin_tool_V1.01.7z` | `db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212` |
+| Windows / 1.07.2 | `rk_ddrBin_tool_V1.07.2.zip` | `618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -59,9 +49,9 @@ db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
 ## Связанные рабочие процессы
 
 - [Руководство Rockchip DDR: частота, ёмкость, проверка, глазковые диаграммы и ECC](https://blog.armsom.org/ru/articles/037-rockchip-ddr/)
-- [boot_merger: согласование DDR, загрузочного кода и Loader](boot-merger.md)
-- [DDR_UserTool 1.41: выбор конфигурации тестирования DDR](ddr-user-tool.md)
-- [Каталог инструментов Rockchip и руководств](../../README.md)
+- [boot_merger: согласование DDR, загрузочного кода и Loader](https://blog.armsom.org/ru/articles/rockchip-tool-boot-merger/)
+- [DDR_UserTool 1.41: выбор конфигурации тестирования DDR](https://blog.armsom.org/ru/articles/rockchip-tool-ddr-user-tool/)
+- [Каталог инструментов Rockchip и руководств](https://blog.armsom.org/ru/articles/rockchip-tools-download-guide/)
 
 ## Документация плат ArmSoM
 

@@ -22,19 +22,15 @@ EfuseTool связан с записью защитной информации, 
 
 Руководство составлено по документации этой коллекции. Проверьте плату, SoC, плату-носитель, SDK/BSP и архитектуру хоста. Прошивка, provisioning, запись регистров и аппаратные испытания не выполнялись. Наличие пакета не подтверждает поддержку всех изделий ArmSoM.
 
-## Загрузка, версии и SHA-256
+## Каталог GitHub, версии и SHA-256
 
-Выберите архив, проверьте хеш и распакуйте весь каталог. Разделённый Linux PinDebug сначала восстановите по инструкции; его указанный хеш относится к целому файлу.
+Откройте соответствующий каталог GitHub, выберите платформу и версию, проверьте хеш и распакуйте весь каталог. Ссылки ниже ведут в каталоги репозитория.
 
-| Хост / версия | Пакет |
-|---|---|
-| Windows / 1.42 | [EfuseTool_v1.42.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/efuse-tool/EfuseTool_v1.42.zip) |
+[Открыть каталог инструмента на GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/efuse-tool)
 
-**EfuseTool_v1.42.zip — SHA-256**
-
-```text
-abb81d072ad6a7cec31d7a7c5a3f72d9bfe57544ee4d8715e4c031b4bd780fc9
-```
+| Платформа / версия | Файл | SHA-256 |
+|---|---|---|
+| Windows / 1.42 | `EfuseTool_v1.42.zip` | `abb81d072ad6a7cec31d7a7c5a3f72d9bfe57544ee4d8715e4c031b4bd780fc9` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -44,10 +40,10 @@ abb81d072ad6a7cec31d7a7c5a3f72d9bfe57544ee4d8715e4c031b4bd780fc9
 
 ## Связанные рабочие процессы
 
-- [rk_sign_tool и sign_tool: подпись и проверка прошивки Rockchip](rk-sign-tool.md)
-- [SecureBootTool 1.85: границы исторической схемы Secure Boot](secureboot-tool.md)
+- [rk_sign_tool и sign_tool: подпись и проверка прошивки Rockchip](https://blog.armsom.org/ru/articles/rockchip-tool-rk-sign-tool/)
+- [SecureBootTool 1.85: границы исторической схемы Secure Boot](https://blog.armsom.org/ru/articles/rockchip-tool-secureboot-tool/)
 - [Полное руководство Rockchip Secure Boot: подпись, eFuse, OTP и проверка](https://blog.armsom.org/ru/articles/105-rockchip-secure-boot/)
-- [Каталог инструментов Rockchip и руководств](../../README.md)
+- [Каталог инструментов Rockchip и руководств](https://blog.armsom.org/ru/articles/rockchip-tools-download-guide/)
 
 ## Документация плат ArmSoM
 

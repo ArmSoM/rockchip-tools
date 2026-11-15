@@ -29,26 +29,16 @@ Testen Sie Speicherinitialisierung, Kalt-/Warmstart und DDR-Prüfungen mit der r
 
 Dieser Ablauf basiert auf der Dokumentation der Sammlung. Prüfen Sie Board, SoC, Trägerplatine, SDK/BSP und Host-Architektur. Flashen, Provisionieren, Registerschreiben und Hardwaretests wurden nicht ausgeführt. Ein verfügbares Paket belegt keine Unterstützung aller ArmSoM-Produkte.
 
-## Download, Versionen und SHA-256
+## GitHub-Werkzeugverzeichnis, Versionen und SHA-256
 
-Passendes Archiv laden, Hash prüfen und den vollständigen Ordner entpacken. Linux PinDebug zuerst nach verlinkter Anleitung zusammensetzen; der angegebene Hash gehört zur vollständigen Datei.
+Das passende GitHub-Verzeichnis öffnen, Host und Version wählen, Dateihash prüfen und vollständig entpacken. Die folgenden Links öffnen Repository-Verzeichnisse.
 
-| Host / Version | Paket |
-|---|---|
-| Linux / 1.01 | [rk_ddrbin_tool_V1.01.7z](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z) |
-| Windows / 1.07.2 | [rk_ddrBin_tool_V1.07.2.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip) |
+[Werkzeugverzeichnis auf GitHub öffnen](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddrbin-tool)
 
-**rk_ddrbin_tool_V1.01.7z — SHA-256**
-
-```text
-db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
-```
-
-**rk_ddrBin_tool_V1.07.2.zip — SHA-256**
-
-```text
-618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1
-```
+| Plattform / Version | Datei | SHA-256 |
+|---|---|---|
+| Linux / 1.01 | `rk_ddrbin_tool_V1.01.7z` | `db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212` |
+| Windows / 1.07.2 | `rk_ddrBin_tool_V1.07.2.zip` | `618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -59,9 +49,9 @@ db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
 ## Verwandte Arbeitsabläufe
 
 - [Rockchip DDR-Entwicklerleitfaden: Frequenz, Kapazität, Validierung, Augendiagramme und ECC](https://blog.armsom.org/de/articles/037-rockchip-ddr/)
-- [boot_merger: DDR-Komponenten und Loader richtig zusammenstellen](boot-merger.md)
-- [DDR_UserTool 1.41: passende DDR-Testkonfigurationen auswählen](ddr-user-tool.md)
-- [Rockchip-Werkzeug- und Downloadübersicht](../../README.md)
+- [boot_merger: DDR-Komponenten und Loader richtig zusammenstellen](https://blog.armsom.org/de/articles/rockchip-tool-boot-merger/)
+- [DDR_UserTool 1.41: passende DDR-Testkonfigurationen auswählen](https://blog.armsom.org/de/articles/rockchip-tool-ddr-user-tool/)
+- [Rockchip-Werkzeug- und Downloadübersicht](https://blog.armsom.org/de/articles/rockchip-tools-download-guide/)
 
 ## Passende ArmSoM-Boarddokumentation
 

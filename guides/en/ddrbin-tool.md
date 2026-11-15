@@ -29,26 +29,16 @@ Validate memory initialization, cold/warm boot and the DDR test plan on the corr
 
 This is a documentation-based workflow for the supplied tool collection. Confirm the exact board, SoC, carrier, SDK/BSP and host architecture before using it. No flashing, provisioning, register writes or hardware tests were performed. Package availability does not establish support for every ArmSoM product.
 
-## Download, versions and SHA-256
+## GitHub tool directory, versions and SHA-256
 
-Download the matching archive, verify the hash, and extract the entire directory. For the split Linux PinDebug archive, follow the linked reconstruction instructions; the hash below is for the reconstructed file.
+Open the matching GitHub directory, select the required host/version, then verify the file hash and extract the full directory. Links below open repository directories.
 
-| Host / version | Package |
-|---|---|
-| Linux / 1.01 | [rk_ddrbin_tool_V1.01.7z](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z) |
-| Windows / 1.07.2 | [rk_ddrBin_tool_V1.07.2.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip) |
+[Open the tool directory on GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddrbin-tool)
 
-**rk_ddrbin_tool_V1.01.7z — SHA-256**
-
-```text
-db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
-```
-
-**rk_ddrBin_tool_V1.07.2.zip — SHA-256**
-
-```text
-618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1
-```
+| Platform / version | File | SHA-256 |
+|---|---|---|
+| Linux / 1.01 | `rk_ddrbin_tool_V1.01.7z` | `db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212` |
+| Windows / 1.07.2 | `rk_ddrBin_tool_V1.07.2.zip` | `618bd996e570cb2f94b2c714e53776c3edc6bad3211e6c377be3cfd45bc48bc1` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -59,9 +49,9 @@ db87698a90f620dcea6ab166af7d330dfb6f36e9b2cc9ec02dd000bf474b2212
 ## Continue with the related workflow
 
 - [Rockchip DDR Developer Guide: Frequency, Capacity, Validation, Eye Diagrams and ECC](https://blog.armsom.org/articles/037-rockchip-ddr/)
-- [boot_merger: prepare a Rockchip Loader without mixing DDR and boot components](boot-merger.md)
-- [DDR_UserTool 1.41: select DDR test configurations for a board](ddr-user-tool.md)
-- [Rockchip tool download and workflow index](../../README.md)
+- [boot_merger: prepare a Rockchip Loader without mixing DDR and boot components](https://blog.armsom.org/articles/rockchip-tool-boot-merger/)
+- [DDR_UserTool 1.41: select DDR test configurations for a board](https://blog.armsom.org/articles/rockchip-tool-ddr-user-tool/)
+- [Rockchip tool download and workflow index](https://blog.armsom.org/articles/rockchip-tools-download-guide/)
 
 ## Find the correct ArmSoM board documentation
 

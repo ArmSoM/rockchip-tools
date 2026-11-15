@@ -28,19 +28,15 @@ SD Boot 准备受支持镜像的启动介质；升级卡可能进入更新流程
 
 本文依据本次工具包及原始资料整理。使用前核对具体板卡、SoC、载板、SDK/BSP 与主机架构。本次未执行烧录、生产配置、寄存器写入或硬件测试；提供下载不代表所有 ArmSoM 产品均支持。
 
-## 工具下载、版本与 SHA-256
+## GitHub 工具目录、版本与 SHA-256
 
-下载对应压缩包，校验哈希后完整解压。Linux PinDebug 分卷请先按链接中的说明还原；下方该项哈希对应合并后的完整文件。
+打开 GitHub 对应目录后选择所需平台和版本，再校验文件哈希并完整解压。下方链接均为仓库目录入口。
 
-| 主机 / 版本 | 下载包 |
-|---|---|
-| Windows / 1.78 | [SDDiskTool_v1.78.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/sd-disk-tool/SDDiskTool_v1.78.zip) |
+[前往 GitHub 对应工具目录](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/sd-disk-tool)
 
-**SDDiskTool_v1.78.zip — SHA-256**
-
-```text
-4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08
-```
+| 平台 / 版本 | 文件 | SHA-256 |
+|---|---|---|
+| Windows / 1.78 | `SDDiskTool_v1.78.zip` | `4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -51,8 +47,8 @@ SD Boot 准备受支持镜像的启动介质；升级卡可能进入更新流程
 ## 继续阅读相关流程
 
 - [Rockchip SD 卡启动：升级卡、启动卡、修复卡与 BCB 完整指南](https://blog.armsom.org/zh/articles/087-rockchip-sd-card-boot/)
-- [RKDevTool 下载与使用：Loader、分区镜像和整包固件烧录](rkdevtool.md)
-- [Rockchip 工具下载与使用指南索引](../../README.md)
+- [RKDevTool 下载与使用：Loader、分区镜像和整包固件烧录](https://blog.armsom.org/zh/articles/rockchip-tool-rkdevtool/)
+- [Rockchip 工具下载与使用指南索引](https://blog.armsom.org/zh/articles/rockchip-tools-download-guide/)
 
 ## 查找准确的 ArmSoM 板卡资料
 

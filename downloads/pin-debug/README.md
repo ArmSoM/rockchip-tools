@@ -2,8 +2,10 @@
 
 The Linux 1.11 package is larger than GitHub's 100 MiB single-file limit. Download **both parts** into one directory. They are consecutive pieces of the unchanged `.tar.gz` file, not independent installations.
 
-- [Part 1: pin_debug_tool_v1.11_for_linux.tar.gz.001](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/pin-debug/pin_debug_tool_v1.11_for_linux.tar.gz.001)
-- [Part 2: pin_debug_tool_v1.11_for_linux.tar.gz.002](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/pin-debug/pin_debug_tool_v1.11_for_linux.tar.gz.002)
+- Part 1: `pin_debug_tool_v1.11_for_linux.tar.gz.001`
+- Part 2: `pin_debug_tool_v1.11_for_linux.tar.gz.002`
+
+Open the [PinDebug directory on GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pin-debug) and select both parts there.
 
 ## Reconstruct on Linux / macOS
 

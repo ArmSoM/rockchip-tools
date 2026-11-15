@@ -47,19 +47,15 @@ A missing image path, an overlapping partition or confusing compact with flat ou
 
 This is a documentation-based workflow for the supplied tool collection. Confirm the exact board, SoC, carrier, SDK/BSP and host architecture before using it. No flashing, provisioning, register writes or hardware tests were performed. Package availability does not establish support for every ArmSoM product.
 
-## Download, versions and SHA-256
+## GitHub tool directory, versions and SHA-256
 
-Download the matching archive, verify the hash, and extract the entire directory. For the split Linux PinDebug archive, follow the linked reconstruction instructions; the hash below is for the reconstructed file.
+Open the matching GitHub directory, select the required host/version, then verify the file hash and extract the full directory. Links below open repository directories.
 
-| Host / version | Package |
-|---|---|
-| Linux / directory snapshot | [firmware-merger-linux-directory-snapshot.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-merger/firmware-merger-linux-directory-snapshot.zip) |
+[Open the tool directory on GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/firmware-merger)
 
-**firmware-merger-linux-directory-snapshot.zip — SHA-256**
-
-```text
-798ce66df5ee1f22cd96f811bf9140e5e9f4f0f3977a4ef37acd54554d6992ea
-```
+| Platform / version | File | SHA-256 |
+|---|---|---|
+| Linux / directory snapshot | `firmware-merger-linux-directory-snapshot.zip` | `798ce66df5ee1f22cd96f811bf9140e5e9f4f0f3977a4ef37acd54554d6992ea` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -69,9 +65,9 @@ Download the matching archive, verify the hash, and extract the entire directory
 
 ## Continue with the related workflow
 
-- [afptool and rkImageMaker: understand and package Rockchip update.img](firmware-pack-tools.md)
-- [programmer_image_tool: convert update.img for eMMC, SPI NOR and NAND programmers](programmer-image-tool.md)
-- [Rockchip tool download and workflow index](../../README.md)
+- [afptool and rkImageMaker: understand and package Rockchip update.img](https://blog.armsom.org/articles/rockchip-tool-firmware-pack-tools/)
+- [programmer_image_tool: convert update.img for eMMC, SPI NOR and NAND programmers](https://blog.armsom.org/articles/rockchip-tool-programmer-image-tool/)
+- [Rockchip tool download and workflow index](https://blog.armsom.org/articles/rockchip-tools-download-guide/)
 
 ## Find the correct ArmSoM board documentation
 

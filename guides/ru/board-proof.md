@@ -20,19 +20,15 @@ Windows-пакет BoardProofTool содержит `ProofDll.dll`, `RKUpgrade_DL
 
 Руководство составлено по документации этой коллекции. Проверьте плату, SoC, плату-носитель, SDK/BSP и архитектуру хоста. Прошивка, provisioning, запись регистров и аппаратные испытания не выполнялись. Наличие пакета не подтверждает поддержку всех изделий ArmSoM.
 
-## Загрузка, версии и SHA-256
+## Каталог GitHub, версии и SHA-256
 
-Выберите архив, проверьте хеш и распакуйте весь каталог. Разделённый Linux PinDebug сначала восстановите по инструкции; его указанный хеш относится к целому файлу.
+Откройте соответствующий каталог GitHub, выберите платформу и версию, проверьте хеш и распакуйте весь каталог. Ссылки ниже ведут в каталоги репозитория.
 
-| Хост / версия | Пакет |
-|---|---|
-| Windows / 1.01 | [BoardProofTool_v1.01_20240823_02.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/board-proof/BoardProofTool_v1.01_20240823_02.zip) |
+[Открыть каталог инструмента на GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/board-proof)
 
-**BoardProofTool_v1.01_20240823_02.zip — SHA-256**
-
-```text
-72c732d7c91ba7742c4c36d2a549171f9289d820c3d50aad468e38cdd7806029
-```
+| Платформа / версия | Файл | SHA-256 |
+|---|---|---|
+| Windows / 1.01 | `BoardProofTool_v1.01_20240823_02.zip` | `72c732d7c91ba7742c4c36d2a549171f9289d820c3d50aad468e38cdd7806029` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -42,9 +38,9 @@ Windows-пакет BoardProofTool содержит `ProofDll.dll`, `RKUpgrade_DL
 
 ## Связанные рабочие процессы
 
-- [RKDevInfoWriteTool: серийные номера и MAC без дублирования](devinfo-write.md)
-- [EfuseTool 1.42: подготовка станции Secure Boot provisioning](efuse-tool.md)
-- [Каталог инструментов Rockchip и руководств](../../README.md)
+- [RKDevInfoWriteTool: серийные номера и MAC без дублирования](https://blog.armsom.org/ru/articles/rockchip-tool-devinfo-write/)
+- [EfuseTool 1.42: подготовка станции Secure Boot provisioning](https://blog.armsom.org/ru/articles/rockchip-tool-efuse-tool/)
+- [Каталог инструментов Rockchip и руководств](https://blog.armsom.org/ru/articles/rockchip-tools-download-guide/)
 
 ## Документация плат ArmSoM
 

@@ -26,19 +26,15 @@ Fehlendes Medium, Sperr-/Unmount-Probleme, fehlende Firmware und Formatierungsfe
 
 Dieser Ablauf basiert auf der Dokumentation der Sammlung. Prüfen Sie Board, SoC, Trägerplatine, SDK/BSP und Host-Architektur. Flashen, Provisionieren, Registerschreiben und Hardwaretests wurden nicht ausgeführt. Ein verfügbares Paket belegt keine Unterstützung aller ArmSoM-Produkte.
 
-## Download, Versionen und SHA-256
+## GitHub-Werkzeugverzeichnis, Versionen und SHA-256
 
-Passendes Archiv laden, Hash prüfen und den vollständigen Ordner entpacken. Linux PinDebug zuerst nach verlinkter Anleitung zusammensetzen; der angegebene Hash gehört zur vollständigen Datei.
+Das passende GitHub-Verzeichnis öffnen, Host und Version wählen, Dateihash prüfen und vollständig entpacken. Die folgenden Links öffnen Repository-Verzeichnisse.
 
-| Host / Version | Paket |
-|---|---|
-| Windows / 1.78 | [SDDiskTool_v1.78.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/sd-disk-tool/SDDiskTool_v1.78.zip) |
+[Werkzeugverzeichnis auf GitHub öffnen](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/sd-disk-tool)
 
-**SDDiskTool_v1.78.zip — SHA-256**
-
-```text
-4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08
-```
+| Plattform / Version | Datei | SHA-256 |
+|---|---|---|
+| Windows / 1.78 | `SDDiskTool_v1.78.zip` | `4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -49,8 +45,8 @@ Passendes Archiv laden, Hash prüfen und den vollständigen Ordner entpacken. Li
 ## Verwandte Arbeitsabläufe
 
 - [Rockchip-SD-Boot: Upgrade-, Boot- und Reparaturkarten sowie BCB](https://blog.armsom.org/de/articles/087-rockchip-sd-card-boot/)
-- [RKDevTool: Download, Loader, Partitionen und update.img](rkdevtool.md)
-- [Rockchip-Werkzeug- und Downloadübersicht](../../README.md)
+- [RKDevTool: Download, Loader, Partitionen und update.img](https://blog.armsom.org/de/articles/rockchip-tool-rkdevtool/)
+- [Rockchip-Werkzeug- und Downloadübersicht](https://blog.armsom.org/de/articles/rockchip-tools-download-guide/)
 
 ## Passende ArmSoM-Boarddokumentation
 

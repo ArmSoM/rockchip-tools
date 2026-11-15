@@ -6,36 +6,36 @@ Rockchip development-tool downloads, SHA-256 checksums, and usage references mai
 
 ## Download the right package
 
-The **2026-11-15 collection contains 24 tool families: 34 platform/version packages are available and one is withheld for security review**. Binaries are stored directly in this Git repository. Download individual packages below; the current download files total approximately 552 MiB. A full Git clone also includes historical files. The large Linux PinDebug package is split into two parts, with reconstruction instructions at its download link.
+The **2026-11-15 collection contains 24 tool families: 34 platform/version packages are available**. Tools are stored in this Git repository. Open the matching tool directory below, choose a platform/version, and use GitHub to obtain the file; the current download files total approximately 552 MiB. A full Git clone also includes historical files. The large Linux PinDebug package is split into two parts, with reconstruction instructions in its directory README.
 
 Version labels describe the supplied collection, not the latest vendor release. A host OS label does not imply support for every host CPU architecture or ArmSoM board. Match the board, SoC, carrier, storage, SDK/BSP and manual before using a tool.
 
-| Tool | Purpose | Downloads |
+| Tool | Purpose | GitHub directory / guide |
 |---|---|---|
-| RKDevTool | Windows Rockusb flashing GUI | [Windows / 3.37 release notes](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rkdevtool/RKDevTool-windows-directory-snapshot.zip) |
-| DriverAssitant | Windows Rockusb and ADB driver installation | [Windows / 5.13](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/driver-assistant/DriverAssitant_v5.13.zip) |
-| upgrade_tool | Command-line firmware flashing | [Linux / 2.44](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/upgrade-tool/upgrade_tool_v2.44_for_linux.zip) · [macOS / 2.13](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/upgrade-tool/upgrade_tool_v2.13_for_mac.zip) · [Windows / 2.46](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/upgrade-tool/upgrade_tool_v2.46.zip) |
-| boot_merger | Loader packaging and unpacking | [Linux / 1.35 release notes](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/boot-merger/boot_merger-linux-directory-snapshot.zip) · [macOS / 1.3](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/boot-merger/boot_merger_v1.3_mac.zip) · [Windows / 1.32](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/boot-merger/boot_merger_v1.32.zip) |
-| Firmware_Merger | Flat and compact flash image generation | [Linux / directory snapshot](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-merger/firmware-merger-linux-directory-snapshot.zip) |
-| afptool, rkImageMaker and rockdev | Partition-image and update.img packaging | [Linux / directory snapshot](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-pack-tools/rockdev-linux-directory-snapshot.zip) · [macOS / 2.1](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-pack-tools/rockdev_v2.1_mac.zip) · [Windows / 20230109](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-pack-tools/RKImageMaker_20230109.zip) |
-| Linux_Diff_Firmware | Differential OTA image packaging | [Linux / directory snapshot](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/diff-firmware/linux-diff-firmware-directory-snapshot.zip) |
-| DDR Bandwidth Tool | DDR bandwidth and utilization measurement | [Linux target / manual 1.4.1](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddr-bandwidth/ddr-bandwidth-linux-directory-snapshot.zip) |
-| DDR_UserTool | DDR test image workflow | [Windows / 1.41](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddr-user-tool/DDR_UserTool_v1.41.7z) |
-| rk_ddrbin_tool | DDR initialization binary configuration | [Linux / 1.01](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrbin_tool_V1.01.7z) · [Windows / 1.07.2](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddrbin-tool/rk_ddrBin_tool_V1.07.2.zip) |
-| PinDebug | IOMUX, GPIO and voltage-domain inspection | [Linux / 1.11](https://github.com/ArmSoM/rockchip-tools/blob/main/downloads/pin-debug/README.md) · [Windows / 1.18](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/pin-debug/pin_debug_tool_v1.18_20250322_win.zip) |
-| USB SQ Tool | USB PHY signal tuning and test-command reference | [Windows / 1.5 — download withheld](https://github.com/ArmSoM/rockchip-tools/blob/main/SECURITY-REVIEW.md) |
-| rk_sign_tool and sign_tool | Firmware signing and signature verification | [Linux / 1.42](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/rk_sign_tool_v1.42_linux.zip) · [Linux / directory snapshot](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/rk_sign_tool-linux-directory-snapshot.zip) · [macOS / 1.2](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/rk-sign-tool/sign_tool_v1.2_mac.zip) |
-| SecureBootTool | Historical Secure Boot preparation workflow | [Host to verify / 1.85](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/secureboot-tool/SecureBootTool_v1.85_foruser.zip) |
-| Linux SecurityAVB | AVB certificate and image preparation | [Linux / manual 2.2.5](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/linux-avb/linux-security-avb-without-keys.zip) |
-| Linux SecurityDM | Historical dm-verity root filesystem packaging | [Linux / 1.01](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/linux-dm/Linux_SecurityDM_v1_01.tar.gz) |
-| BoardProofTool | Board-protection configuration workflow | [Windows / 1.01](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/board-proof/BoardProofTool_v1.01_20240823_02.zip) |
-| EfuseTool | eFuse provisioning workflow | [Windows / 1.42](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/efuse-tool/EfuseTool_v1.42.zip) |
-| ParameterTool | Rockchip partition parameter editing | [Windows / 1.2](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/parameter-tool/ParameterTool_v1.2.zip) |
-| RKDevInfoWriteTool | Serial number and device information provisioning | [Windows / 1.3.7](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/devinfo-write/RKDevInfoWriteTool-v1.3.7-clean.zip) |
-| RKPCBATool | Board production-test integration | [Windows host + Linux target / 1.2.1](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/pcba-tool/RKPCBATool_v1.2.1_20251226.zip) |
-| HDCP Key Writer | Authorized HDCP key provisioning | [Windows / 1.0.5](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/hdcp-key-writer/Rockchip_HdcpKey_Writer_V1.0.5-clean.zip) |
-| SDDiskTool | SD boot and upgrade media preparation | [Windows / 1.78](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/sd-disk-tool/SDDiskTool_v1.78.zip) |
-| programmer_image_tool | eMMC, SPI NOR and NAND programmer images | [Linux / 1.26](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/programmer-image-tool/programmer_image_tool_v1.26_linux.tar.gz) · [Windows / 1.28](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/programmer-image-tool/programmer_image_tool_v1.28.zip) |
+| RKDevTool | Windows Rockusb flashing GUI | [Windows / 3.37 release notes](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rkdevtool) |
+| DriverAssitant | Windows Rockusb and ADB driver installation | [Windows / 5.13](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/driver-assistant) |
+| upgrade_tool | Command-line firmware flashing | [Linux / 2.44](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/upgrade-tool) · [macOS / 2.13](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/upgrade-tool) · [Windows / 2.46](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/upgrade-tool) |
+| boot_merger | Loader packaging and unpacking | [Linux / 1.35 release notes](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/boot-merger) · [macOS / 1.3](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/boot-merger) · [Windows / 1.32](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/boot-merger) |
+| Firmware_Merger | Flat and compact flash image generation | [Linux / directory snapshot](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/firmware-merger) |
+| afptool, rkImageMaker and rockdev | Partition-image and update.img packaging | [Linux / directory snapshot](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/firmware-pack-tools) · [macOS / 2.1](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/firmware-pack-tools) · [Windows / 20230109](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/firmware-pack-tools) |
+| Linux_Diff_Firmware | Differential OTA image packaging | [Linux / directory snapshot](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/diff-firmware) |
+| DDR Bandwidth Tool | DDR bandwidth and utilization measurement | [Linux target / manual 1.4.1](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddr-bandwidth) |
+| DDR_UserTool | DDR test image workflow | [Windows / 1.41](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddr-user-tool) |
+| rk_ddrbin_tool | DDR initialization binary configuration | [Linux / 1.01](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddrbin-tool) · [Windows / 1.07.2](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddrbin-tool) |
+| PinDebug | IOMUX, GPIO and voltage-domain inspection | [Linux / 1.11](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pin-debug) · [Windows / 1.18](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pin-debug) |
+| USB SQ Tool | USB PHY reference documentation | [Usage guide](guides/en/usb-sq-tool.md) |
+| rk_sign_tool and sign_tool | Firmware signing and signature verification | [Linux / 1.42](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rk-sign-tool) · [Linux / directory snapshot](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rk-sign-tool) · [macOS / 1.2](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rk-sign-tool) |
+| SecureBootTool | Historical Secure Boot preparation workflow | [Host to verify / 1.85](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/secureboot-tool) |
+| Linux SecurityAVB | AVB certificate and image preparation | [Linux / manual 2.2.5](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/linux-avb) |
+| Linux SecurityDM | Historical dm-verity root filesystem packaging | [Linux / 1.01](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/linux-dm) |
+| BoardProofTool | Board-protection configuration workflow | [Windows / 1.01](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/board-proof) |
+| EfuseTool | eFuse provisioning workflow | [Windows / 1.42](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/efuse-tool) |
+| ParameterTool | Rockchip partition parameter editing | [Windows / 1.2](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/parameter-tool) |
+| RKDevInfoWriteTool | Serial number and device information provisioning | [Windows / 1.3.7](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/devinfo-write) |
+| RKPCBATool | Board production-test integration | [Windows host + Linux target / 1.2.1](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pcba-tool) |
+| HDCP Key Writer | Authorized HDCP key provisioning | [Windows / 1.0.5](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/hdcp-key-writer) |
+| SDDiskTool | SD boot and upgrade media preparation | [Windows / 1.78](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/sd-disk-tool) |
+| programmer_image_tool | eMMC, SPI NOR and NAND programmer images | [Linux / 1.26](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/programmer-image-tool) · [Windows / 1.28](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/programmer-image-tool) |
 
 ## Verify downloads
 
@@ -88,4 +88,19 @@ Updates should retain distinct version labels and original notices. See [CONTRIB
 
 [EN](guides/en/) · [中文](guides/zh/) · [RU](guides/ru/) · [DE](guides/de/)
 
-[USB SQ Tool 1.5: download withheld / 暂停下载](SECURITY-REVIEW.md)
+
+## PDF previews and tool directories
+
+| Tool | GitHub directory / guide | PDF preview |
+|---|---|---|
+| RKDevTool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rkdevtool) | [RKDevTool_manual_v1.2_cn.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/27081f89d32f.pdf) · [RKDevTool_manual_v1.2_en.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/6a8a5813c129.pdf) · [开发工具使用说明_v1.0.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/be6d064c5f70.pdf) |
+| upgrade_tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/upgrade-tool) | [命令行开发工具使用文档.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/925b67105873.pdf) · [命令行开发工具使用文档v1.1.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/8a7aa375abfc.pdf) |
+| DDR Bandwidth Tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddr-bandwidth) | [Rockchip_Introduction_DDR_Bandwidth_Tool_CN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/35fc41c5ec2e.pdf) |
+| PinDebug | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pin-debug) | [PinDebug_UserManual.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/1cae2e2c0777.pdf) |
+| USB SQ Tool | [GitHub](guides/en/usb-sq-tool.md) | [Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/0ec9ef065fdc.pdf) |
+| rk_sign_tool and sign_tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rk-sign-tool) | [sign_tool用户使用手册.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/8528f18eea87.pdf) |
+| SecureBootTool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/secureboot-tool) | [Rockchip Secure Boot Application Note_v1.2_20160202.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/094883c784c1.pdf) |
+| Linux SecurityAVB | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/linux-avb) | [Rockchip_User_Manual_Linux_AVB_EN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/50f19e52844b.pdf) |
+| RKPCBATool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pcba-tool) | [Rockchip_Developer_Guide_Linux_PCBA_CN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/31be89bdda4b.pdf) · [Rockchip_Developer_Guide_Linux_PCBA_EN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/6cb5fb2c60e8.pdf) |
+| HDCP Key Writer | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/hdcp-key-writer) | [Rockchip_User_Guide_HDCP_Key_Flash.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/e1ef88b767b1.pdf) |
+| programmer_image_tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/programmer-image-tool) | [Linux — user_manual.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/454e7646c90d.pdf) · [Windows — user_manual.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/47ce51e919d3.pdf) |

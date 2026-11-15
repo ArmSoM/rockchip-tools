@@ -28,19 +28,15 @@ No standalone comprehensive PDF was found in this package. This article explains
 
 This is a documentation-based workflow for the supplied tool collection. Confirm the exact board, SoC, carrier, SDK/BSP and host architecture before using it. No flashing, provisioning, register writes or hardware tests were performed. Package availability does not establish support for every ArmSoM product.
 
-## Download, versions and SHA-256
+## GitHub tool directory, versions and SHA-256
 
-Download the matching archive, verify the hash, and extract the entire directory. For the split Linux PinDebug archive, follow the linked reconstruction instructions; the hash below is for the reconstructed file.
+Open the matching GitHub directory, select the required host/version, then verify the file hash and extract the full directory. Links below open repository directories.
 
-| Host / version | Package |
-|---|---|
-| Windows / 1.41 | [DDR_UserTool_v1.41.7z](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/ddr-user-tool/DDR_UserTool_v1.41.7z) |
+[Open the tool directory on GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddr-user-tool)
 
-**DDR_UserTool_v1.41.7z — SHA-256**
-
-```text
-f53d06ad782e9fa85f5f098572fc20bd82945886936b1df5faf6ebf6ea892416
-```
+| Platform / version | File | SHA-256 |
+|---|---|---|
+| Windows / 1.41 | `DDR_UserTool_v1.41.7z` | `f53d06ad782e9fa85f5f098572fc20bd82945886936b1df5faf6ebf6ea892416` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -51,9 +47,9 @@ f53d06ad782e9fa85f5f098572fc20bd82945886936b1df5faf6ebf6ea892416
 ## Continue with the related workflow
 
 - [Rockchip DDR Developer Guide: Frequency, Capacity, Validation, Eye Diagrams and ECC](https://blog.armsom.org/articles/037-rockchip-ddr/)
-- [DDR Bandwidth Tool: measure memory traffic and interpret Rockchip counters](ddr-bandwidth.md)
-- [rk_ddrbin_tool: inspect and change DDR initialization parameters](ddrbin-tool.md)
-- [Rockchip tool download and workflow index](../../README.md)
+- [DDR Bandwidth Tool: measure memory traffic and interpret Rockchip counters](https://blog.armsom.org/articles/rockchip-tool-ddr-bandwidth/)
+- [rk_ddrbin_tool: inspect and change DDR initialization parameters](https://blog.armsom.org/articles/rockchip-tool-ddrbin-tool/)
+- [Rockchip tool download and workflow index](https://blog.armsom.org/articles/rockchip-tools-download-guide/)
 
 ## Find the correct ArmSoM board documentation
 

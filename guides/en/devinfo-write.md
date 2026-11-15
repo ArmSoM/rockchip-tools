@@ -24,19 +24,15 @@ Record consumed IDs, device status and readback. After a timeout, reconcile whet
 
 This is a documentation-based workflow for the supplied tool collection. Confirm the exact board, SoC, carrier, SDK/BSP and host architecture before using it. No flashing, provisioning, register writes or hardware tests were performed. Package availability does not establish support for every ArmSoM product.
 
-## Download, versions and SHA-256
+## GitHub tool directory, versions and SHA-256
 
-Download the matching archive, verify the hash, and extract the entire directory. For the split Linux PinDebug archive, follow the linked reconstruction instructions; the hash below is for the reconstructed file.
+Open the matching GitHub directory, select the required host/version, then verify the file hash and extract the full directory. Links below open repository directories.
 
-| Host / version | Package |
-|---|---|
-| Windows / 1.3.7 | [RKDevInfoWriteTool-v1.3.7-clean.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/devinfo-write/RKDevInfoWriteTool-v1.3.7-clean.zip) |
+[Open the tool directory on GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/devinfo-write)
 
-**RKDevInfoWriteTool-v1.3.7-clean.zip — SHA-256**
-
-```text
-66a3a94142470356adc8c7e3a2b9ba2deee60fd3bb7bcbba9c196c2534eb6f3a
-```
+| Platform / version | File | SHA-256 |
+|---|---|---|
+| Windows / 1.3.7 | `RKDevInfoWriteTool-v1.3.7-clean.zip` | `66a3a94142470356adc8c7e3a2b9ba2deee60fd3bb7bcbba9c196c2534eb6f3a` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -46,10 +42,10 @@ Download the matching archive, verify the hash, and extract the entire directory
 
 ## Continue with the related workflow
 
-- [HDCP Key Writer: package authorized keys and control device provisioning](hdcp-key-writer.md)
-- [RKPCBATool 1.2.1: configure Linux board functional tests and operator checks](pcba-tool.md)
-- [EfuseTool 1.42: prepare a traceable Secure Boot provisioning station](efuse-tool.md)
-- [Rockchip tool download and workflow index](../../README.md)
+- [HDCP Key Writer: package authorized keys and control device provisioning](https://blog.armsom.org/articles/rockchip-tool-hdcp-key-writer/)
+- [RKPCBATool 1.2.1: configure Linux board functional tests and operator checks](https://blog.armsom.org/articles/rockchip-tool-pcba-tool/)
+- [EfuseTool 1.42: prepare a traceable Secure Boot provisioning station](https://blog.armsom.org/articles/rockchip-tool-efuse-tool/)
+- [Rockchip tool download and workflow index](https://blog.armsom.org/articles/rockchip-tools-download-guide/)
 
 ## Find the correct ArmSoM board documentation
 

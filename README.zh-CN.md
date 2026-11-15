@@ -1,6 +1,6 @@
 # ArmSoM Rockchip 工具下载库
 
-本仓库收录 24 类工具，其中 34 个平台或版本包可下载、1 个包暂停等待安全核验，整理日期为 2026-11-15。工具包直接存入 Git 仓库，通过 [完整下载表](README.md#download-the-right-package) 选择单个文件；当前下载文件约 552 MiB；完整 Git 克隆还包含历史文件。Linux PinDebug 大文件分为两个分卷，下载入口附带拼接和校验方法。
+本仓库收录 24 类工具，其中 34 个平台或版本包可下载，整理日期为 2026-11-15。工具包直接存入 Git 仓库，通过 [工具目录表](README.md#download-the-right-package) 进入对应目录并自行选择文件；当前下载文件约 552 MiB；完整 Git 克隆还包含历史文件。Linux PinDebug 大文件分为两个分卷，下载入口附带拼接和校验方法。
 
 每个工具按实际版本、运行平台和原始资料分别说明。目录名、工具版本和 PDF 手册版本不是同一个概念，也不表示支持所有 ArmSoM 产品。先确认板卡、SoC、存储、SDK/BSP 和运行主机架构，再选择工具及固件。
 
@@ -48,4 +48,19 @@
 
 [EN](guides/en/) · [中文](guides/zh/) · [RU](guides/ru/) · [DE](guides/de/)
 
-[USB SQ Tool 1.5: download withheld / 暂停下载](SECURITY-REVIEW.md)
+
+## PDF 手册与工具目录
+
+| Tool | GitHub directory / guide | PDF preview |
+|---|---|---|
+| RKDevTool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rkdevtool) | [RKDevTool_manual_v1.2_cn.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/27081f89d32f.pdf) · [RKDevTool_manual_v1.2_en.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/6a8a5813c129.pdf) · [开发工具使用说明_v1.0.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/be6d064c5f70.pdf) |
+| upgrade_tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/upgrade-tool) | [命令行开发工具使用文档.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/925b67105873.pdf) · [命令行开发工具使用文档v1.1.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/8a7aa375abfc.pdf) |
+| DDR Bandwidth Tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/ddr-bandwidth) | [Rockchip_Introduction_DDR_Bandwidth_Tool_CN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/35fc41c5ec2e.pdf) |
+| PinDebug | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pin-debug) | [PinDebug_UserManual.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/1cae2e2c0777.pdf) |
+| USB SQ Tool | [GitHub](guides/en/usb-sq-tool.md) | [Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/0ec9ef065fdc.pdf) |
+| rk_sign_tool and sign_tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/rk-sign-tool) | [sign_tool用户使用手册.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/8528f18eea87.pdf) |
+| SecureBootTool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/secureboot-tool) | [Rockchip Secure Boot Application Note_v1.2_20160202.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/094883c784c1.pdf) |
+| Linux SecurityAVB | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/linux-avb) | [Rockchip_User_Manual_Linux_AVB_EN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/50f19e52844b.pdf) |
+| RKPCBATool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/pcba-tool) | [Rockchip_Developer_Guide_Linux_PCBA_CN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/31be89bdda4b.pdf) · [Rockchip_Developer_Guide_Linux_PCBA_EN.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/6cb5fb2c60e8.pdf) |
+| HDCP Key Writer | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/hdcp-key-writer) | [Rockchip_User_Guide_HDCP_Key_Flash.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/e1ef88b767b1.pdf) |
+| programmer_image_tool | [GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/programmer-image-tool) | [Linux — user_manual.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/454e7646c90d.pdf) · [Windows — user_manual.pdf](https://github.com/ArmSoM/rockchip-tools/blob/main/manuals/47ce51e919d3.pdf) |

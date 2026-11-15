@@ -28,19 +28,15 @@ The 1.78 notes fix an address-access error when writing backup GPT. Earlier note
 
 This is a documentation-based workflow for the supplied tool collection. Confirm the exact board, SoC, carrier, SDK/BSP and host architecture before using it. No flashing, provisioning, register writes or hardware tests were performed. Package availability does not establish support for every ArmSoM product.
 
-## Download, versions and SHA-256
+## GitHub tool directory, versions and SHA-256
 
-Download the matching archive, verify the hash, and extract the entire directory. For the split Linux PinDebug archive, follow the linked reconstruction instructions; the hash below is for the reconstructed file.
+Open the matching GitHub directory, select the required host/version, then verify the file hash and extract the full directory. Links below open repository directories.
 
-| Host / version | Package |
-|---|---|
-| Windows / 1.78 | [SDDiskTool_v1.78.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/sd-disk-tool/SDDiskTool_v1.78.zip) |
+[Open the tool directory on GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/sd-disk-tool)
 
-**SDDiskTool_v1.78.zip — SHA-256**
-
-```text
-4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08
-```
+| Platform / version | File | SHA-256 |
+|---|---|---|
+| Windows / 1.78 | `SDDiskTool_v1.78.zip` | `4b4a8349c102b2b791ce2ae6f179c94aa81962e788df7232b603e9bb76549d08` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -51,8 +47,8 @@ Download the matching archive, verify the hash, and extract the entire directory
 ## Continue with the related workflow
 
 - [Rockchip SD Card Boot: Upgrade, Boot, Repair and BCB Guide](https://blog.armsom.org/articles/087-rockchip-sd-card-boot/)
-- [RKDevTool download and workflow: Loader, partitions and update.img](rkdevtool.md)
-- [Rockchip tool download and workflow index](../../README.md)
+- [RKDevTool download and workflow: Loader, partitions and update.img](https://blog.armsom.org/articles/rockchip-tool-rkdevtool/)
+- [Rockchip tool download and workflow index](https://blog.armsom.org/articles/rockchip-tools-download-guide/)
 
 ## Find the correct ArmSoM board documentation
 

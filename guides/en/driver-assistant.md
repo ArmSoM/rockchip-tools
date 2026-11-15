@@ -30,19 +30,15 @@ Record the installer version, Windows build and architecture, USB controller, bo
 
 This is a documentation-based workflow for the supplied tool collection. Confirm the exact board, SoC, carrier, SDK/BSP and host architecture before using it. No flashing, provisioning, register writes or hardware tests were performed. Package availability does not establish support for every ArmSoM product.
 
-## Download, versions and SHA-256
+## GitHub tool directory, versions and SHA-256
 
-Download the matching archive, verify the hash, and extract the entire directory. For the split Linux PinDebug archive, follow the linked reconstruction instructions; the hash below is for the reconstructed file.
+Open the matching GitHub directory, select the required host/version, then verify the file hash and extract the full directory. Links below open repository directories.
 
-| Host / version | Package |
-|---|---|
-| Windows / 5.13 | [DriverAssitant_v5.13.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/driver-assistant/DriverAssitant_v5.13.zip) |
+[Open the tool directory on GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/driver-assistant)
 
-**DriverAssitant_v5.13.zip — SHA-256**
-
-```text
-b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9
-```
+| Platform / version | File | SHA-256 |
+|---|---|---|
+| Windows / 5.13 | `DriverAssitant_v5.13.zip` | `b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -52,9 +48,9 @@ b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9
 
 ## Continue with the related workflow
 
-- [RKDevTool download and workflow: Loader, partitions and update.img](rkdevtool.md)
-- [upgrade_tool download: command-line Rockchip firmware workflow](upgrade-tool.md)
-- [Rockchip tool download and workflow index](../../README.md)
+- [RKDevTool download and workflow: Loader, partitions and update.img](https://blog.armsom.org/articles/rockchip-tool-rkdevtool/)
+- [upgrade_tool download: command-line Rockchip firmware workflow](https://blog.armsom.org/articles/rockchip-tool-upgrade-tool/)
+- [Rockchip tool download and workflow index](https://blog.armsom.org/articles/rockchip-tools-download-guide/)
 
 ## Find the correct ArmSoM board documentation
 

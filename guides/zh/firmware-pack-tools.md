@@ -33,33 +33,17 @@ RK3588 脚本会检查缺少 parameter 和 package-file。路径不存在、镜�
 
 本文依据本次工具包及原始资料整理。使用前核对具体板卡、SoC、载板、SDK/BSP 与主机架构。本次未执行烧录、生产配置、寄存器写入或硬件测试；提供下载不代表所有 ArmSoM 产品均支持。
 
-## 工具下载、版本与 SHA-256
+## GitHub 工具目录、版本与 SHA-256
 
-下载对应压缩包，校验哈希后完整解压。Linux PinDebug 分卷请先按链接中的说明还原；下方该项哈希对应合并后的完整文件。
+打开 GitHub 对应目录后选择所需平台和版本，再校验文件哈希并完整解压。下方链接均为仓库目录入口。
 
-| 主机 / 版本 | 下载包 |
-|---|---|
-| Linux / directory snapshot | [rockdev-linux-directory-snapshot.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-pack-tools/rockdev-linux-directory-snapshot.zip) |
-| macOS / 2.1 | [rockdev_v2.1_mac.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-pack-tools/rockdev_v2.1_mac.zip) |
-| Windows / 20230109 | [RKImageMaker_20230109.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/firmware-pack-tools/RKImageMaker_20230109.zip) |
+[前往 GitHub 对应工具目录](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/firmware-pack-tools)
 
-**rockdev-linux-directory-snapshot.zip — SHA-256**
-
-```text
-06049f3eb612de5d1a3866bffe4b1d8d7dabaef4fd38b07decd79380f5af5a36
-```
-
-**rockdev_v2.1_mac.zip — SHA-256**
-
-```text
-af29d720edba7a0f082f984d57adf5a09b81a8df6deebf7f158aeedabd4018e7
-```
-
-**RKImageMaker_20230109.zip — SHA-256**
-
-```text
-887863bb2563ba0ab9c77b846a26f47fe7774f95152d66253c4de910419591cd
-```
+| 平台 / 版本 | 文件 | SHA-256 |
+|---|---|---|
+| Linux / directory snapshot | `rockdev-linux-directory-snapshot.zip` | `06049f3eb612de5d1a3866bffe4b1d8d7dabaef4fd38b07decd79380f5af5a36` |
+| macOS / 2.1 | `rockdev_v2.1_mac.zip` | `af29d720edba7a0f082f984d57adf5a09b81a8df6deebf7f158aeedabd4018e7` |
+| Windows / 20230109 | `RKImageMaker_20230109.zip` | `887863bb2563ba0ab9c77b846a26f47fe7774f95152d66253c4de910419591cd` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -70,10 +54,10 @@ af29d720edba7a0f082f984d57adf5a09b81a8df6deebf7f158aeedabd4018e7
 
 ## 继续阅读相关流程
 
-- [Firmware_Merger：Flat RK、Flat GPT 与 Compact GPT 固件打包](firmware-merger.md)
-- [upgrade_tool 下载与使用：命令行烧录、设备选择和结果校验](upgrade-tool.md)
+- [Firmware_Merger：Flat RK、Flat GPT 与 Compact GPT 固件打包](https://blog.armsom.org/zh/articles/rockchip-tool-firmware-merger/)
+- [upgrade_tool 下载与使用：命令行烧录、设备选择和结果校验](https://blog.armsom.org/zh/articles/rockchip-tool-upgrade-tool/)
 - [Rockchip 量产烧录完整指南：USB、SD、烧录器与故障排查](https://blog.armsom.org/zh/articles/147-rockchip-firmware-production/)
-- [Rockchip 工具下载与使用指南索引](../../README.md)
+- [Rockchip 工具下载与使用指南索引](https://blog.armsom.org/zh/articles/rockchip-tools-download-guide/)
 
 ## 查找准确的 ArmSoM 板卡资料
 

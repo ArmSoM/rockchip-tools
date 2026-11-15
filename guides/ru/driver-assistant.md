@@ -28,19 +28,15 @@ DriverAssitant устанавливает и удаляет USB-драйверы
 
 Руководство составлено по документации этой коллекции. Проверьте плату, SoC, плату-носитель, SDK/BSP и архитектуру хоста. Прошивка, provisioning, запись регистров и аппаратные испытания не выполнялись. Наличие пакета не подтверждает поддержку всех изделий ArmSoM.
 
-## Загрузка, версии и SHA-256
+## Каталог GitHub, версии и SHA-256
 
-Выберите архив, проверьте хеш и распакуйте весь каталог. Разделённый Linux PinDebug сначала восстановите по инструкции; его указанный хеш относится к целому файлу.
+Откройте соответствующий каталог GitHub, выберите платформу и версию, проверьте хеш и распакуйте весь каталог. Ссылки ниже ведут в каталоги репозитория.
 
-| Хост / версия | Пакет |
-|---|---|
-| Windows / 5.13 | [DriverAssitant_v5.13.zip](https://raw.githubusercontent.com/ArmSoM/rockchip-tools/main/downloads/driver-assistant/DriverAssitant_v5.13.zip) |
+[Открыть каталог инструмента на GitHub](https://github.com/ArmSoM/rockchip-tools/tree/main/downloads/driver-assistant)
 
-**DriverAssitant_v5.13.zip — SHA-256**
-
-```text
-b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9
-```
+| Платформа / версия | Файл | SHA-256 |
+|---|---|---|
+| Windows / 5.13 | `DriverAssitant_v5.13.zip` | `b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9` |
 
 [GitHub · catalog.json](https://github.com/ArmSoM/rockchip-tools/blob/main/catalog.json) · [SHA256SUMS](https://github.com/ArmSoM/rockchip-tools/blob/main/SHA256SUMS)
 
@@ -50,9 +46,9 @@ b2cabce5ab23551d8649c1201ef741fd73c8326044b78edac5439f013f034ff9
 
 ## Связанные рабочие процессы
 
-- [RKDevTool: загрузка, Loader, разделы и прошивка update.img](rkdevtool.md)
-- [upgrade_tool: команды прошивки Rockchip и выбор устройства](upgrade-tool.md)
-- [Каталог инструментов Rockchip и руководств](../../README.md)
+- [RKDevTool: загрузка, Loader, разделы и прошивка update.img](https://blog.armsom.org/ru/articles/rockchip-tool-rkdevtool/)
+- [upgrade_tool: команды прошивки Rockchip и выбор устройства](https://blog.armsom.org/ru/articles/rockchip-tool-upgrade-tool/)
+- [Каталог инструментов Rockchip и руководств](https://blog.armsom.org/ru/articles/rockchip-tools-download-guide/)
 
 ## Документация плат ArmSoM
 
