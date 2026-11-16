@@ -6,6 +6,10 @@
 
 Das Werkzeug programmiert lizenzierte HDCP-Schlüssel aus speziell gepackten `.skf`-Dateien. Handbuch V1.0.1 und Paket 1.0.5 unterscheiden sich. Alle Einstellungen, das HdcpKeyPack-Beispiel und die KeyConvertor-Abbildung bleiben erhalten. Gezeigt werden Dateinamen und Beispiellogs, keine echten Schlüssel.
 
+![HDCP Key Writer: Hauptfenster und Schreibprotokoll](../../images/manuals/e1ef88b767b1/p02-f01.png)
+
+**Abbildung 1: HDCP Key Writer: Hauptfenster und Schreibprotokoll**
+
 ### 1. Allgemeine und HDCP-Einstellungen
 
 | Einstellung | Bedeutung |
@@ -18,6 +22,14 @@ Das Werkzeug programmiert lizenzierte HDCP-Schlüssel aus speziell gepackten `.s
 | 兼容模式 1 / 2 | Modi für ältere Plattformen; bei Fehlern schlägt die Vorlage einen davon vor |
 | RK3588 | RK3588 ausdrücklich wählen, da Controller und Schlüsselverschlüsselung abweichen |
 | HDCP / AES | HDCP-Punkte einzeln aktivieren; bei RK3588 AES-Transportverschlüsselung je Schlüssel einstellen |
+
+![Allgemeine Einstellungen und HDCP-Schreiboptionen](../../images/manuals/e1ef88b767b1/p02-f02.png)
+
+**Abbildung 2: Allgemeine Einstellungen und HDCP-Schreiboptionen**
+
+![AES-Verschlüsselung für die Übertragung eines HDCP-Schlüssels aktivieren](../../images/manuals/e1ef88b767b1/p03-f01.png)
+
+**Abbildung 3: AES-Verschlüsselung für die Übertragung eines HDCP-Schlüssels aktivieren**
 
 ### 2. HdcpKeyPack
 
@@ -50,6 +62,10 @@ Die letzte Quellseite erklärt Dateiauswahl und Konfiguration von KeyConvertor i
 
 Die KeyConvertor-Abbildung wählt eine ursprüngliche `.bin`, Bereich und KEY-Anzahl je Datei und dann Extract. Zehn Schlüssel mit drei je Datei ergeben `1-3`, `4-6`, `7-9`, `10-10`; jede bin wird in skf im gezeigten `separate_key`-Verzeichnis umgewandelt. Die Anzahl ist ein Beispiel, keine Produktionsquote.
 
+![KeyConvertor: Extraktion, Gruppierung und Konvertierungsergebnisse](../../images/manuals/e1ef88b767b1/p05-f01.png)
+
+**Abbildung 4: KeyConvertor: Extraktion, Gruppierung und Konvertierungsergebnisse**
+
 ## Geltungsbereich und Prüfung
 
 Dieser Ablauf basiert auf der Dokumentation der Sammlung. Prüfen Sie Board, SoC, Trägerplatine, SDK/BSP und Host-Architektur. Flashen, Provisionieren, Registerschreiben und Hardwaretests wurden nicht ausgeführt. Ein verfügbares Paket belegt keine Unterstützung aller ArmSoM-Produkte.
@@ -69,26 +85,6 @@ Das passende GitHub-Verzeichnis öffnen, Host und Version wählen, Dateihash pr�
 ## Quellen und Originalabbildungen
 
 - Rockchip_User_Guide_HDCP_Key_Flash.pdf
-
-### Originaloberflächen und Diagramme des Handbuchs
-
-Oberflächen behalten ihre Quellsprache. Englische Originale werden verwendet, soweit vorhanden; zusätzliche Ansichten ohne englische Vorlage bleiben chinesisch. Werte sind Handbuchbeispiele, keine aktuellen Boardmessungen.
-
-![Originalabbildung des Handbuchs: hdcp-key-writer · p. 2 · 1](../../images/manuals/e1ef88b767b1/p02-f01.png)
-
-Rockchip_User_Guide_HDCP_Key_Flash.pdf · p. 2
-
-![Originalabbildung des Handbuchs: hdcp-key-writer · p. 2 · 2](../../images/manuals/e1ef88b767b1/p02-f02.png)
-
-Rockchip_User_Guide_HDCP_Key_Flash.pdf · p. 2
-
-![Originalabbildung des Handbuchs: hdcp-key-writer · p. 3 · 1](../../images/manuals/e1ef88b767b1/p03-f01.png)
-
-Rockchip_User_Guide_HDCP_Key_Flash.pdf · p. 3
-
-![Originalabbildung des Handbuchs: hdcp-key-writer · p. 5 · 1](../../images/manuals/e1ef88b767b1/p05-f01.png)
-
-Rockchip_User_Guide_HDCP_Key_Flash.pdf · p. 5
 
 ## Verwandte Arbeitsabläufe
 

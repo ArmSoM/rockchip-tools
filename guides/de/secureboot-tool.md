@@ -18,9 +18,37 @@ Loaderex=true
 Key=2048
 ```
 
+![Ablauf zum Signieren und Prüfen des Boot-Abbilds](../../images/manuals/094883c784c1/p05-f01.png)
+
+**Abbildung 1: Ablauf zum Signieren und Prüfen des Boot-Abbilds**
+
+![Hauptfenster von SecureBootTool](../../images/manuals/094883c784c1/p06-f01.png)
+
+**Abbildung 2: Hauptfenster von SecureBootTool**
+
+![Zielchip auswählen](../../images/manuals/094883c784c1/p07-f01.png)
+
+**Abbildung 3: Zielchip auswählen**
+
+![eFuse- oder Softwaremodus auswählen](../../images/manuals/094883c784c1/p07-f02.png)
+
+**Abbildung 4: eFuse- oder Softwaremodus auswählen**
+
 ### 2. RSA-Schlüssel erzeugen, sichern und laden
 
 Die Quelle verlangt ein Schlüsselpaar pro Produktmodell, das für spätere Firmware weiterverwendet und zusätzlich gesichert wird. Erzeugen, bestätigen, speichern und von dort laden. OpenSSL-`.pem`-RSA2048 wird unterstützt. Schlüsselverlust kann signierte Updates und Wiederherstellung verhindern. Die Screenshots zeigen den Ablauf, kein Produktions-Schlüsselmanagement.
+
+![Speichern des erzeugten Schlüsselpaars bestätigen](../../images/manuals/094883c784c1/p09-f01.png)
+
+**Abbildung 5: Speichern des erzeugten Schlüsselpaars bestätigen**
+
+![Verzeichnis zum Speichern der Schlüssel wählen](../../images/manuals/094883c784c1/p10-f01.png)
+
+**Abbildung 6: Verzeichnis zum Speichern der Schlüssel wählen**
+
+![Gespeicherte private Schlüsseldatei laden](../../images/manuals/094883c784c1/p11-f01.png)
+
+**Abbildung 7: Gespeicherte private Schlüsseldatei laden**
 
 ### 3. Firmware vorbereiten und signieren
 
@@ -37,13 +65,57 @@ create recovery.img with kernel... done.
 create misc.img.... done.
 ```
 
+![Boot- und Recovery-Abbilder mit Kernel erzeugen](../../images/manuals/094883c784c1/p12-f01.png)
+
+**Abbildung 8: Boot- und Recovery-Abbilder mit Kernel erzeugen**
+
+![Signierung mit Sign Firmware starten](../../images/manuals/094883c784c1/p07-f03.png)
+
+**Abbildung 9: Signierung mit Sign Firmware starten**
+
+![Zu signierende Firmware auswählen](../../images/manuals/094883c784c1/p13-f01.png)
+
+**Abbildung 10: Zu signierende Firmware auswählen**
+
+![Erfolgsmeldung nach der Firmware-Signierung](../../images/manuals/094883c784c1/p14-f01.png)
+
+**Abbildung 11: Erfolgsmeldung nach der Firmware-Signierung**
+
 ### 4. eFuse programmieren
 
 eFuse-Werkzeug öffnen, signierte Produktionsfirmware wählen und Start drücken. Ein leeres Gerät startet per USB in `maskromrockusb`, worauf die automatische Programmierung beginnt; mehrere Geräte werden unterstützt. RK312X benötigt eine Vorrichtung mit separater eFuse-Versorgung, RK3288 besitzt softwaregesteuerte Versorgung. Vor einer Serie ein Gerät programmieren, vollständige signierte Firmware aufspielen und alle Funktionen prüfen. eFuse ist irreversible Provisionierung, kein unbedenklicher Versuch an einem normalen Board.
 
+![eFuse-Werkzeug öffnen](../../images/manuals/094883c784c1/p15-f01.png)
+
+**Abbildung 12: eFuse-Werkzeug öffnen**
+
+![Signierte Produktionsfirmware auswählen](../../images/manuals/094883c784c1/p16-f01.png)
+
+**Abbildung 13: Signierte Produktionsfirmware auswählen**
+
+![Werkzeug starten und auf das Gerät warten](../../images/manuals/094883c784c1/p17-f01.png)
+
+**Abbildung 14: Werkzeug starten und auf das Gerät warten**
+
+![Ergebnis der eFuse-Programmierung prüfen](../../images/manuals/094883c784c1/p18-f01.png)
+
+**Abbildung 15: Ergebnis der eFuse-Programmierung prüfen**
+
 ### 5. Aktualisieren und prüfen
 
 Signierte Firmware mit passendem Produktionstool aktualisieren. Ohne eFuse-Programmierung wird dieser Secure Boot laut Vorlage nicht aktiviert. Beim Negativtest mit unsignierter Firmware soll der Start scheitern, das Gerät in `maskromrockusb` bleiben und nach Loader-Update einen Werkzeugfehler zeigen. Die folgenden Screenshots sind Quellenbelege, keine ArmSoM-Tests.
+
+![Signierte Firmware im Batch-Werkzeug laden](../../images/manuals/094883c784c1/p20-f01.png)
+
+**Abbildung 16: Signierte Firmware im Batch-Werkzeug laden**
+
+![Erfolgreiches Update mit signierter Firmware](../../images/manuals/094883c784c1/p21-f01.png)
+
+**Abbildung 17: Erfolgreiches Update mit signierter Firmware**
+
+![Negativprüfung mit unsignierter Firmware](../../images/manuals/094883c784c1/p22-f01.png)
+
+**Abbildung 18: Negativprüfung mit unsignierter Firmware**
 
 ### 6. Häufige Fehler
 
@@ -68,82 +140,6 @@ Das passende GitHub-Verzeichnis öffnen, Host und Version wählen, Dateihash pr�
 ## Quellen und Originalabbildungen
 
 - Rockchip Secure Boot Application Note_v1.2_20160202.pdf
-
-### Originaloberflächen und Diagramme des Handbuchs
-
-Oberflächen behalten ihre Quellsprache. Englische Originale werden verwendet, soweit vorhanden; zusätzliche Ansichten ohne englische Vorlage bleiben chinesisch. Werte sind Handbuchbeispiele, keine aktuellen Boardmessungen.
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 5 · 1](../../images/manuals/094883c784c1/p05-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 5
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 6 · 1](../../images/manuals/094883c784c1/p06-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 6
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 7 · 1](../../images/manuals/094883c784c1/p07-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 7
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 7 · 2](../../images/manuals/094883c784c1/p07-f02.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 7
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 7 · 3](../../images/manuals/094883c784c1/p07-f03.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 7
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 9 · 1](../../images/manuals/094883c784c1/p09-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 9
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 10 · 1](../../images/manuals/094883c784c1/p10-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 10
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 11 · 1](../../images/manuals/094883c784c1/p11-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 11
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 12 · 1](../../images/manuals/094883c784c1/p12-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 12
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 13 · 1](../../images/manuals/094883c784c1/p13-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 13
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 14 · 1](../../images/manuals/094883c784c1/p14-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 14
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 15 · 1](../../images/manuals/094883c784c1/p15-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 15
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 16 · 1](../../images/manuals/094883c784c1/p16-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 16
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 17 · 1](../../images/manuals/094883c784c1/p17-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 17
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 18 · 1](../../images/manuals/094883c784c1/p18-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 18
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 20 · 1](../../images/manuals/094883c784c1/p20-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 20
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 21 · 1](../../images/manuals/094883c784c1/p21-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 21
-
-![Originalabbildung des Handbuchs: secureboot-tool · p. 22 · 1](../../images/manuals/094883c784c1/p22-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 22
 
 ## Verwandte Arbeitsabläufe
 

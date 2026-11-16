@@ -10,45 +10,129 @@ The manual lists RK3588, RK3566, RK3568, RV1126, RV1109, RV1106, RV1103 and RK35
 
 Select the SoC before any operation. The Pin page shows multiplexing by pin/GPIO: search by Function, right-click a Function to print its configuration command, or double-click while connected to apply it directly. Pin and IO-number columns are sortable. The IOmux page groups controllable signals by module.
 
+![Select the chip and open a project](../../images/manuals/1cae2e2c0777/p02-f01.png)
+
+**Figure 1: Select the chip and open a project**
+
+![Pins and alternate functions in the Pin view](../../images/manuals/1cae2e2c0777/p02-f02.png)
+
+**Figure 2: Pins and alternate functions in the Pin view**
+
+![Browse IOmux by functional module](../../images/manuals/1cae2e2c0777/p03-f01.png)
+
+**Figure 3: Browse IOmux by functional module**
+
 ### 1.2 Connect the device
 
 Communication uses ADB. Open the project, enable ADB on the device, connect the host and click the toolbar connection icon.
+
+![Connect the device](../../images/manuals/1cae2e2c0777/p03-f02.png)
+
+**Figure 4: Connect the device**
 
 ### 1.3 Read IOMUX
 
 Read all IOMUX registers to update both Pin and IOmux pages. Offline definitions do not replace actual device readback.
 
+![Read IOMUX from the device](../../images/manuals/1cae2e2c0777/p03-f03.png)
+
+**Figure 5: Read IOMUX from the device**
+
+![Current functions in the IOmux view](../../images/manuals/1cae2e2c0777/p04-f01.png)
+
+**Figure 6: Current functions in the IOmux view**
+
+![Enabled functions highlighted in the Pin view](../../images/manuals/1cae2e2c0777/p04-f02.png)
+
+**Figure 7: Enabled functions highlighted in the Pin view**
+
 ### 1.4 Modify IOMUX
 
 Checking a functional IO in IOmux selects that function; clearing it selects GPIO. A conflict prompt allows cancellation or confirmation.
+
+![Alternate-function conflict prompt](../../images/manuals/1cae2e2c0777/p05-f01.png)
+
+**Figure 8: Alternate-function conflict prompt**
 
 ### 1.5 Pull and drive settings
 
 Select an enabled functional IO and right-click to read or modify pull configuration and drive strength. The original figures use EMMC_CLKOUT; check whether the storage controller is actively using it before changes.
 
+![Inspect EMMC_CLKOUT pull and drive strength](../../images/manuals/1cae2e2c0777/p05-f02.png)
+
+**Figure 9: Inspect EMMC_CLKOUT pull and drive strength**
+
+![Configure EMMC_CLKOUT properties](../../images/manuals/1cae2e2c0777/p05-f03.png)
+
+**Figure 10: Configure EMMC_CLKOUT properties**
+
 ### 1.6 Read and modify GPIO data
 
 The source uses GPIO1C3. The GPIO-function checkbox indicates GPIO mode; direction comes from GPIO `ddr`, output level from `dr`, IO voltage from PMU `vsel`, and port level from `ext_port`. Here `ddr` is a direction register, not DDR memory.
+
+![GPIO status and signal levels](../../images/manuals/1cae2e2c0777/p06-f01.png)
+
+**Figure 11: GPIO status and signal levels**
+
+![Configure GPIO1C3 properties](../../images/manuals/1cae2e2c0777/p06-f02.png)
+
+**Figure 12: Configure GPIO1C3 properties**
 
 ### 1.7 Read regulators
 
 The tool reads the device regulator-summary node with `cat` and parses all domains. The manual does not specify the complete node path.
 
+![Read regulator information](../../images/manuals/1cae2e2c0777/p06-f03.png)
+
+**Figure 13: Read regulator information**
+
+![Regulator and power-domain information](../../images/manuals/1cae2e2c0777/p07-f01.png)
+
+**Figure 14: Regulator and power-domain information**
+
 ### 1.8 Read voltage-domain selection
 
 The tool parses the voltage-selection register into a domain list. Section 1.8 spells it `vesl`, while 1.6 says `vsel`; this source discrepancy is retained. A selection value is not a measured voltage.
+
+![Read voltage-domain selection](../../images/manuals/1cae2e2c0777/p07-f02.png)
+
+**Figure 15: Read voltage-domain selection**
+
+![Power-domain Vsel values](../../images/manuals/1cae2e2c0777/p07-f03.png)
+
+**Figure 16: Power-domain Vsel values**
 
 ### 1.9 Check IOmux
 
 Print selected IOs by module to determine which IO set is active when a module offers several modes.
 
+![Check the IOmux configuration](../../images/manuals/1cae2e2c0777/p07-f04.png)
+
+**Figure 17: Check the IOmux configuration**
+
+![IOmux mode check results by module](../../images/manuals/1cae2e2c0777/p08-f01.png)
+
+**Figure 18: IOmux mode check results by module**
+
 ### 1.10 Export GPIO configuration
 
 After opening a project, export GPIO configuration to an Excel table. Record the selected SoC and distinguish static definitions from device-read values.
 
+![Exported GPIO configuration table](../../images/manuals/1cae2e2c0777/p08-f02.png)
+
+**Figure 19: Exported GPIO configuration table**
+
 ### 1.11 Offline GPIO command lookup
 
 With the project open, look up IOMUX, pull, drive-strength and Schmitt-trigger commands without connecting a device. Enter `help` for syntax; the manual demonstrates `gpio0a0`. Generated commands do not establish suitability for the carrier wiring.
+
+![Offline GPIO command help](../../images/manuals/1cae2e2c0777/p09-f01.png)
+
+**Figure 20: Offline GPIO command help**
+
+![Look up register commands for a GPIO](../../images/manuals/1cae2e2c0777/p09-f02.png)
+
+**Figure 21: Look up register commands for a GPIO**
 
 ### Offline lookup syntax transcribed from the screenshot
 
@@ -86,94 +170,6 @@ Open the matching GitHub directory, select the required host/version, then verif
 ## Source documents and figures
 
 - PinDebug_UserManual.pdf
-
-### Original manual interfaces and diagrams
-
-Screens retain their source language. English-source figures are used where available; additional screens without English originals remain Chinese. Values are manual examples, not measurements of a current board.
-
-![Original manual figure: pin-debug · p. 2 · 1](../../images/manuals/1cae2e2c0777/p02-f01.png)
-
-PinDebug_UserManual.pdf · p. 2
-
-![Original manual figure: pin-debug · p. 2 · 2](../../images/manuals/1cae2e2c0777/p02-f02.png)
-
-PinDebug_UserManual.pdf · p. 2
-
-![Original manual figure: pin-debug · p. 3 · 1](../../images/manuals/1cae2e2c0777/p03-f01.png)
-
-PinDebug_UserManual.pdf · p. 3
-
-![Original manual figure: pin-debug · p. 3 · 2](../../images/manuals/1cae2e2c0777/p03-f02.png)
-
-PinDebug_UserManual.pdf · p. 3
-
-![Original manual figure: pin-debug · p. 3 · 3](../../images/manuals/1cae2e2c0777/p03-f03.png)
-
-PinDebug_UserManual.pdf · p. 3
-
-![Original manual figure: pin-debug · p. 4 · 1](../../images/manuals/1cae2e2c0777/p04-f01.png)
-
-PinDebug_UserManual.pdf · p. 4
-
-![Original manual figure: pin-debug · p. 4 · 2](../../images/manuals/1cae2e2c0777/p04-f02.png)
-
-PinDebug_UserManual.pdf · p. 4
-
-![Original manual figure: pin-debug · p. 5 · 1](../../images/manuals/1cae2e2c0777/p05-f01.png)
-
-PinDebug_UserManual.pdf · p. 5
-
-![Original manual figure: pin-debug · p. 5 · 2](../../images/manuals/1cae2e2c0777/p05-f02.png)
-
-PinDebug_UserManual.pdf · p. 5
-
-![Original manual figure: pin-debug · p. 5 · 3](../../images/manuals/1cae2e2c0777/p05-f03.png)
-
-PinDebug_UserManual.pdf · p. 5
-
-![Original manual figure: pin-debug · p. 6 · 1](../../images/manuals/1cae2e2c0777/p06-f01.png)
-
-PinDebug_UserManual.pdf · p. 6
-
-![Original manual figure: pin-debug · p. 6 · 2](../../images/manuals/1cae2e2c0777/p06-f02.png)
-
-PinDebug_UserManual.pdf · p. 6
-
-![Original manual figure: pin-debug · p. 6 · 3](../../images/manuals/1cae2e2c0777/p06-f03.png)
-
-PinDebug_UserManual.pdf · p. 6
-
-![Original manual figure: pin-debug · p. 7 · 1](../../images/manuals/1cae2e2c0777/p07-f01.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Original manual figure: pin-debug · p. 7 · 2](../../images/manuals/1cae2e2c0777/p07-f02.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Original manual figure: pin-debug · p. 7 · 3](../../images/manuals/1cae2e2c0777/p07-f03.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Original manual figure: pin-debug · p. 7 · 4](../../images/manuals/1cae2e2c0777/p07-f04.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Original manual figure: pin-debug · p. 8 · 1](../../images/manuals/1cae2e2c0777/p08-f01.png)
-
-PinDebug_UserManual.pdf · p. 8
-
-![Original manual figure: pin-debug · p. 8 · 2](../../images/manuals/1cae2e2c0777/p08-f02.png)
-
-PinDebug_UserManual.pdf · p. 8
-
-![Original manual figure: pin-debug · p. 9 · 1](../../images/manuals/1cae2e2c0777/p09-f01.png)
-
-PinDebug_UserManual.pdf · p. 9
-
-![Original manual figure: pin-debug · p. 9 · 2](../../images/manuals/1cae2e2c0777/p09-f02.png)
-
-PinDebug_UserManual.pdf · p. 9
 
 ## Continue with the related workflow
 

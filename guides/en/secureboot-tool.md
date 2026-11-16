@@ -18,9 +18,37 @@ Loaderex=true
 Key=2048
 ```
 
+![Boot-image signing and verification flow](../../images/manuals/094883c784c1/p05-f01.png)
+
+**Figure 1: Boot-image signing and verification flow**
+
+![SecureBootTool main window](../../images/manuals/094883c784c1/p06-f01.png)
+
+**Figure 2: SecureBootTool main window**
+
+![Select the target chip](../../images/manuals/094883c784c1/p07-f01.png)
+
+**Figure 3: Select the target chip**
+
+![Select eFuse or software mode](../../images/manuals/094883c784c1/p07-f02.png)
+
+**Figure 4: Select eFuse or software mode**
+
 ### 2. Generate, save and load RSA keys
 
 The source requires one key pair per product design, reused for later firmware and backed up separately. Generate, confirm and save, then load it from that location. OpenSSL `.pem` RSA2048 keys are supported. Losing keys can prevent future signed upgrades and recovery. The screenshots demonstrate workflow, not a production key-management system.
+
+![Confirm saving the generated key pair](../../images/manuals/094883c784c1/p09-f01.png)
+
+**Figure 5: Confirm saving the generated key pair**
+
+![Choose the key storage directory](../../images/manuals/094883c784c1/p10-f01.png)
+
+**Figure 6: Choose the key storage directory**
+
+![Load the saved private-key file](../../images/manuals/094883c784c1/p11-f01.png)
+
+**Figure 7: Load the saved private-key file**
 
 ### 3. Prepare and sign firmware
 
@@ -37,13 +65,57 @@ create recovery.img with kernel... done.
 create misc.img.... done.
 ```
 
+![Build boot and recovery images containing the kernel](../../images/manuals/094883c784c1/p12-f01.png)
+
+**Figure 8: Build boot and recovery images containing the kernel**
+
+![Start signing with Sign Firmware](../../images/manuals/094883c784c1/p07-f03.png)
+
+**Figure 9: Start signing with Sign Firmware**
+
+![Select the firmware to sign](../../images/manuals/094883c784c1/p13-f01.png)
+
+**Figure 10: Select the firmware to sign**
+
+![Firmware signing success prompt](../../images/manuals/094883c784c1/p14-f01.png)
+
+**Figure 11: Firmware signing success prompt**
+
 ### 4. eFuse programming
 
 Open the eFuse tool, select signed production firmware and press Start. A blank device powers up over USB in `maskromrockusb`, triggering automatic programming; multiple devices are supported. RK312X needs a fixture with separate eFuse power, whereas RK3288 PCBA provides software-controlled power. Before a batch, program one device, upgrade complete signed firmware and verify all functions. eFuse is irreversible provisioning, not a procedure to trial casually on a normal board.
 
+![Open the eFuse tool](../../images/manuals/094883c784c1/p15-f01.png)
+
+**Figure 12: Open the eFuse tool**
+
+![Select the signed production firmware](../../images/manuals/094883c784c1/p16-f01.png)
+
+**Figure 13: Select the signed production firmware**
+
+![Start the tool and wait for the device](../../images/manuals/094883c784c1/p17-f01.png)
+
+**Figure 14: Start the tool and wait for the device**
+
+![Inspect the eFuse programming result](../../images/manuals/094883c784c1/p18-f01.png)
+
+**Figure 15: Inspect the eFuse programming result**
+
 ### 5. Upgrade and verify
 
 Upgrade signed firmware with the matching production tool. The source states that Secure Boot is not enabled without eFuse programming. Its negative test writes unsigned firmware: boot should fail, remain in `maskromrockusb`, and report a tool error after Loader upgrade. Original screenshots follow; they are not ArmSoM measurements.
+
+![Load signed firmware in the batch tool](../../images/manuals/094883c784c1/p20-f01.png)
+
+**Figure 16: Load signed firmware in the batch tool**
+
+![Successful signed-firmware upgrade](../../images/manuals/094883c784c1/p21-f01.png)
+
+**Figure 17: Successful signed-firmware upgrade**
+
+![Negative verification with unsigned firmware](../../images/manuals/094883c784c1/p22-f01.png)
+
+**Figure 18: Negative verification with unsigned firmware**
 
 ### 6. Common errors
 
@@ -68,82 +140,6 @@ Open the matching GitHub directory, select the required host/version, then verif
 ## Source documents and figures
 
 - Rockchip Secure Boot Application Note_v1.2_20160202.pdf
-
-### Original manual interfaces and diagrams
-
-Screens retain their source language. English-source figures are used where available; additional screens without English originals remain Chinese. Values are manual examples, not measurements of a current board.
-
-![Original manual figure: secureboot-tool · p. 5 · 1](../../images/manuals/094883c784c1/p05-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 5
-
-![Original manual figure: secureboot-tool · p. 6 · 1](../../images/manuals/094883c784c1/p06-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 6
-
-![Original manual figure: secureboot-tool · p. 7 · 1](../../images/manuals/094883c784c1/p07-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 7
-
-![Original manual figure: secureboot-tool · p. 7 · 2](../../images/manuals/094883c784c1/p07-f02.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 7
-
-![Original manual figure: secureboot-tool · p. 7 · 3](../../images/manuals/094883c784c1/p07-f03.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 7
-
-![Original manual figure: secureboot-tool · p. 9 · 1](../../images/manuals/094883c784c1/p09-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 9
-
-![Original manual figure: secureboot-tool · p. 10 · 1](../../images/manuals/094883c784c1/p10-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 10
-
-![Original manual figure: secureboot-tool · p. 11 · 1](../../images/manuals/094883c784c1/p11-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 11
-
-![Original manual figure: secureboot-tool · p. 12 · 1](../../images/manuals/094883c784c1/p12-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 12
-
-![Original manual figure: secureboot-tool · p. 13 · 1](../../images/manuals/094883c784c1/p13-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 13
-
-![Original manual figure: secureboot-tool · p. 14 · 1](../../images/manuals/094883c784c1/p14-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 14
-
-![Original manual figure: secureboot-tool · p. 15 · 1](../../images/manuals/094883c784c1/p15-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 15
-
-![Original manual figure: secureboot-tool · p. 16 · 1](../../images/manuals/094883c784c1/p16-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 16
-
-![Original manual figure: secureboot-tool · p. 17 · 1](../../images/manuals/094883c784c1/p17-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 17
-
-![Original manual figure: secureboot-tool · p. 18 · 1](../../images/manuals/094883c784c1/p18-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 18
-
-![Original manual figure: secureboot-tool · p. 20 · 1](../../images/manuals/094883c784c1/p20-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 20
-
-![Original manual figure: secureboot-tool · p. 21 · 1](../../images/manuals/094883c784c1/p21-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 21
-
-![Original manual figure: secureboot-tool · p. 22 · 1](../../images/manuals/094883c784c1/p22-f01.png)
-
-Rockchip Secure Boot Application Note_v1.2_20160202.pdf · p. 22
 
 ## Continue with the related workflow
 

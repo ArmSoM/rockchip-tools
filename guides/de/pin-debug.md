@@ -10,45 +10,129 @@ Das Handbuch nennt RK3588, RK3566, RK3568, RV1126, RV1109, RV1106, RV1103 und RK
 
 Vor jedem Vorgang den SoC wählen. Die Pin-Seite zeigt Multiplexfunktionen nach Pin/GPIO: Function-Suche, Rechtsklick zum Ausgeben des Einstellbefehls, Doppelklick bei verbundenem Gerät zum direkten Anwenden. Pin- und IO-Nummern sind sortierbar. IOmux gruppiert die steuerbaren Signale nach Modul.
 
+![Chip auswählen und Projekt öffnen](../../images/manuals/1cae2e2c0777/p02-f01.png)
+
+**Abbildung 1: Chip auswählen und Projekt öffnen**
+
+![Pins und alternative Funktionen in der Pin-Ansicht](../../images/manuals/1cae2e2c0777/p02-f02.png)
+
+**Abbildung 2: Pins und alternative Funktionen in der Pin-Ansicht**
+
+![IOmux nach Funktionsmodulen anzeigen](../../images/manuals/1cae2e2c0777/p03-f01.png)
+
+**Abbildung 3: IOmux nach Funktionsmodulen anzeigen**
+
 ### 1.2 Gerät verbinden
 
 Die Kommunikation erfolgt über ADB. Projekt öffnen, ADB am Gerät aktivieren, den Rechner verbinden und das Verbindungssymbol anklicken.
+
+![Gerät verbinden](../../images/manuals/1cae2e2c0777/p03-f02.png)
+
+**Abbildung 4: Gerät verbinden**
 
 ### 1.3 IOMUX lesen
 
 Alle IOMUX-Register lesen, um Pin und IOmux zu aktualisieren. Offline-Definitionen ersetzen keine tatsächlichen Gerätewerte.
 
+![IOMUX vom Gerät lesen](../../images/manuals/1cae2e2c0777/p03-f03.png)
+
+**Abbildung 5: IOMUX vom Gerät lesen**
+
+![Aktuelle Funktionen in der IOmux-Ansicht](../../images/manuals/1cae2e2c0777/p04-f01.png)
+
+**Abbildung 6: Aktuelle Funktionen in der IOmux-Ansicht**
+
+![Aktivierte Funktionen in der Pin-Ansicht hervorgehoben](../../images/manuals/1cae2e2c0777/p04-f02.png)
+
+**Abbildung 7: Aktivierte Funktionen in der Pin-Ansicht hervorgehoben**
+
 ### 1.4 IOMUX ändern
 
 Aktivieren eines Funktions-IO in IOmux wählt diese Funktion; Deaktivieren wählt GPIO. Bei Konflikten lässt sich die Änderung abbrechen oder bestätigen.
+
+![Hinweis auf einen Funktionskonflikt](../../images/manuals/1cae2e2c0777/p05-f01.png)
+
+**Abbildung 8: Hinweis auf einen Funktionskonflikt**
 
 ### 1.5 Pull- und Treiberstärke
 
 Einen aktivierten Funktions-IO markieren und per Rechtsklick Pull-Einstellung und Treiberstärke lesen oder ändern. Die Vorlage zeigt EMMC_CLKOUT; vor Änderungen die Nutzung durch den Speichercontroller prüfen.
 
+![Pull-Widerstand und Treiberstärke von EMMC_CLKOUT anzeigen](../../images/manuals/1cae2e2c0777/p05-f02.png)
+
+**Abbildung 9: Pull-Widerstand und Treiberstärke von EMMC_CLKOUT anzeigen**
+
+![Eigenschaften von EMMC_CLKOUT einstellen](../../images/manuals/1cae2e2c0777/p05-f03.png)
+
+**Abbildung 10: Eigenschaften von EMMC_CLKOUT einstellen**
+
 ### 1.6 GPIO-Daten lesen und ändern
 
 Das Beispiel verwendet GPIO1C3. Das GPIO-Häkchen zeigt den GPIO-Modus; Richtung stammt aus GPIO `ddr`, Ausgangspegel aus `dr`, IO-Spannung aus PMU `vsel`, Portpegel aus `ext_port`. `ddr` ist hier ein Richtungsregister, kein DDR-Speicher.
+
+![GPIO-Zustand und Signalpegel](../../images/manuals/1cae2e2c0777/p06-f01.png)
+
+**Abbildung 11: GPIO-Zustand und Signalpegel**
+
+![Eigenschaften von GPIO1C3 einstellen](../../images/manuals/1cae2e2c0777/p06-f02.png)
+
+**Abbildung 12: Eigenschaften von GPIO1C3 einstellen**
 
 ### 1.7 Regulator-Daten lesen
 
 Das Werkzeug liest den regulator-summary-Knoten per `cat` und wertet alle Domains aus. Das Handbuch nennt keinen vollständigen Knotenpfad.
 
+![Regulator-Informationen auslesen](../../images/manuals/1cae2e2c0777/p06-f03.png)
+
+**Abbildung 13: Regulator-Informationen auslesen**
+
+![Regulator- und Versorgungsdomäneninformationen](../../images/manuals/1cae2e2c0777/p07-f01.png)
+
+**Abbildung 14: Regulator- und Versorgungsdomäneninformationen**
+
 ### 1.8 Spannungsdomänen-Auswahl lesen
 
 Das Spannungswahlregister wird als Domain-Liste dargestellt. Abschnitt 1.8 schreibt `vesl`, Abschnitt 1.6 `vsel`; diese Abweichung bleibt dokumentiert. Ein Auswahlwert ist keine gemessene Spannung.
+
+![Spannungsdomänen-Auswahl auslesen](../../images/manuals/1cae2e2c0777/p07-f02.png)
+
+**Abbildung 15: Spannungsdomänen-Auswahl auslesen**
+
+![Vsel-Werte der Versorgungsdomänen](../../images/manuals/1cae2e2c0777/p07-f03.png)
+
+**Abbildung 16: Vsel-Werte der Versorgungsdomänen**
 
 ### 1.9 IOmux prüfen
 
 Ausgewählte IOs je Modul ausgeben, um bei mehreren Modi die tatsächlich aktive Gruppe zu bestimmen.
 
+![IOmux-Konfiguration prüfen](../../images/manuals/1cae2e2c0777/p07-f04.png)
+
+**Abbildung 17: IOmux-Konfiguration prüfen**
+
+![Prüfergebnisse der IOmux-Modi nach Modul](../../images/manuals/1cae2e2c0777/p08-f01.png)
+
+**Abbildung 18: Prüfergebnisse der IOmux-Modi nach Modul**
+
 ### 1.10 GPIO-Konfiguration exportieren
 
 Nach dem Öffnen eines Projekts die GPIO-Konfiguration als Excel-Tabelle exportieren. Den SoC festhalten und statische Definitionen von gelesenen Gerätewerten unterscheiden.
 
+![Exportierte GPIO-Konfigurationstabelle](../../images/manuals/1cae2e2c0777/p08-f02.png)
+
+**Abbildung 19: Exportierte GPIO-Konfigurationstabelle**
+
 ### 1.11 GPIO-Befehle offline nachschlagen
 
 Bei geöffnetem Projekt lassen sich IOMUX-, Pull-, Treiberstärke- und Schmitt-Trigger-Befehle ohne Gerät nachschlagen. `help` zeigt die Syntax; die Vorlage demonstriert `gpio0a0`. Erzeugte Befehle bestätigen keine Eignung für die Trägerbeschaltung.
+
+![GPIO-Befehlshilfe ohne Geräteverbindung](../../images/manuals/1cae2e2c0777/p09-f01.png)
+
+**Abbildung 20: GPIO-Befehlshilfe ohne Geräteverbindung**
+
+![Registerbefehle für einen GPIO nachschlagen](../../images/manuals/1cae2e2c0777/p09-f02.png)
+
+**Abbildung 21: Registerbefehle für einen GPIO nachschlagen**
 
 ### Aus dem Screenshot übertragene Offline-Suchsyntax
 
@@ -86,94 +170,6 @@ Das passende GitHub-Verzeichnis öffnen, Host und Version wählen, Dateihash pr�
 ## Quellen und Originalabbildungen
 
 - PinDebug_UserManual.pdf
-
-### Originaloberflächen und Diagramme des Handbuchs
-
-Oberflächen behalten ihre Quellsprache. Englische Originale werden verwendet, soweit vorhanden; zusätzliche Ansichten ohne englische Vorlage bleiben chinesisch. Werte sind Handbuchbeispiele, keine aktuellen Boardmessungen.
-
-![Originalabbildung des Handbuchs: pin-debug · p. 2 · 1](../../images/manuals/1cae2e2c0777/p02-f01.png)
-
-PinDebug_UserManual.pdf · p. 2
-
-![Originalabbildung des Handbuchs: pin-debug · p. 2 · 2](../../images/manuals/1cae2e2c0777/p02-f02.png)
-
-PinDebug_UserManual.pdf · p. 2
-
-![Originalabbildung des Handbuchs: pin-debug · p. 3 · 1](../../images/manuals/1cae2e2c0777/p03-f01.png)
-
-PinDebug_UserManual.pdf · p. 3
-
-![Originalabbildung des Handbuchs: pin-debug · p. 3 · 2](../../images/manuals/1cae2e2c0777/p03-f02.png)
-
-PinDebug_UserManual.pdf · p. 3
-
-![Originalabbildung des Handbuchs: pin-debug · p. 3 · 3](../../images/manuals/1cae2e2c0777/p03-f03.png)
-
-PinDebug_UserManual.pdf · p. 3
-
-![Originalabbildung des Handbuchs: pin-debug · p. 4 · 1](../../images/manuals/1cae2e2c0777/p04-f01.png)
-
-PinDebug_UserManual.pdf · p. 4
-
-![Originalabbildung des Handbuchs: pin-debug · p. 4 · 2](../../images/manuals/1cae2e2c0777/p04-f02.png)
-
-PinDebug_UserManual.pdf · p. 4
-
-![Originalabbildung des Handbuchs: pin-debug · p. 5 · 1](../../images/manuals/1cae2e2c0777/p05-f01.png)
-
-PinDebug_UserManual.pdf · p. 5
-
-![Originalabbildung des Handbuchs: pin-debug · p. 5 · 2](../../images/manuals/1cae2e2c0777/p05-f02.png)
-
-PinDebug_UserManual.pdf · p. 5
-
-![Originalabbildung des Handbuchs: pin-debug · p. 5 · 3](../../images/manuals/1cae2e2c0777/p05-f03.png)
-
-PinDebug_UserManual.pdf · p. 5
-
-![Originalabbildung des Handbuchs: pin-debug · p. 6 · 1](../../images/manuals/1cae2e2c0777/p06-f01.png)
-
-PinDebug_UserManual.pdf · p. 6
-
-![Originalabbildung des Handbuchs: pin-debug · p. 6 · 2](../../images/manuals/1cae2e2c0777/p06-f02.png)
-
-PinDebug_UserManual.pdf · p. 6
-
-![Originalabbildung des Handbuchs: pin-debug · p. 6 · 3](../../images/manuals/1cae2e2c0777/p06-f03.png)
-
-PinDebug_UserManual.pdf · p. 6
-
-![Originalabbildung des Handbuchs: pin-debug · p. 7 · 1](../../images/manuals/1cae2e2c0777/p07-f01.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Originalabbildung des Handbuchs: pin-debug · p. 7 · 2](../../images/manuals/1cae2e2c0777/p07-f02.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Originalabbildung des Handbuchs: pin-debug · p. 7 · 3](../../images/manuals/1cae2e2c0777/p07-f03.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Originalabbildung des Handbuchs: pin-debug · p. 7 · 4](../../images/manuals/1cae2e2c0777/p07-f04.png)
-
-PinDebug_UserManual.pdf · p. 7
-
-![Originalabbildung des Handbuchs: pin-debug · p. 8 · 1](../../images/manuals/1cae2e2c0777/p08-f01.png)
-
-PinDebug_UserManual.pdf · p. 8
-
-![Originalabbildung des Handbuchs: pin-debug · p. 8 · 2](../../images/manuals/1cae2e2c0777/p08-f02.png)
-
-PinDebug_UserManual.pdf · p. 8
-
-![Originalabbildung des Handbuchs: pin-debug · p. 9 · 1](../../images/manuals/1cae2e2c0777/p09-f01.png)
-
-PinDebug_UserManual.pdf · p. 9
-
-![Originalabbildung des Handbuchs: pin-debug · p. 9 · 2](../../images/manuals/1cae2e2c0777/p09-f02.png)
-
-PinDebug_UserManual.pdf · p. 9
 
 ## Verwandte Arbeitsabläufe
 

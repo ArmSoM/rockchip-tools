@@ -8,9 +8,17 @@ Dieser Abschnitt folgt dem mitgelieferten Handbuch V1.4.0. Passende Fachabschnit
 
 Das RK3562-Beispiel endet wie die Quelle mit `]` und ist nicht direkt kompilierbar. Auslassungspunkte kennzeichnen Einfügepositionen, keine vollständigen Patches. Alle Abbildungen sind chinesische V1.4.0-Originale.
 
+![USB-Plattform und PHY-Typ auswählen](../../images/manuals/0ec9ef065fdc/p04-f01.png)
+
+**Abbildung 1: USB-Plattform und PHY-Typ auswählen**
+
 ### 1. RK3399 USB2.0 Tuning Oberfläche
 
 RK3399 USB2.0 unterstützt TYPE-C0, TYPE-C1, HOST0 und HOST1. Vorgehen:
+
+![Oberfläche zur Abstimmung des RK3399 USB2.0 PHY](../../images/manuals/0ec9ef065fdc/p05-f01.png)
+
+**Abbildung 2: Oberfläche zur Abstimmung des RK3399 USB2.0 PHY**
 
 1. Testschnittstelle links in Feld 1 wählen; rechts wird automatisch der SQ-Testbefehl erzeugt.
 
@@ -34,6 +42,10 @@ Tabelle 3.  RK3399 USB2.0 Signalparameter
 ### 2. RK3568 USB2.0 Tuning Oberfläche
 
 RK3568 USB2.0 unterstützt OTG, HOST1, HOST2 und HOST3. Vorgehen:
+
+![RK3568 USB2.0 PHY: Parameter und Codeausgabe](../../images/manuals/0ec9ef065fdc/p07-f01.png)
+
+**Abbildung 3: RK3568 USB2.0 PHY: Parameter und Codeausgabe**
 
 1. Testschnittstelle links in Feld 1 wählen; rechts wird automatisch der SQ-Testbefehl erzeugt.
 
@@ -73,7 +85,11 @@ Typisches Rockchip-Host-Trennungslog:
 
 1) Abziehen eines USB2.0-Geräts wird nicht erkannt. Erscheint kein Trennungslog, folgende Schritte versuchen:
 
-1. EOP-Pre-emphasis aktivieren; im SDK standardmäßig aus, siehe Abbildung 5.
+![Option für EOP-Pre-emphasis](../../images/manuals/0ec9ef065fdc/p09-f01.png)
+
+**Abbildung 4: Option für EOP-Pre-emphasis**
+
+1. EOP-Pre-emphasis aktivieren; im SDK standardmäßig aus, siehe Abbildung 4.
 
 2. Host-Trennschwelle reduzieren. Manche Chips bieten kein EOP-Tuning: Schritt 1 gemäß Oberfläche überspringen. Sonst Schritt 2 zusätzlich erst ausführen, wenn Schritt 1 nicht deutlich hilft. Zu starke Absenkung kann unbeabsichtigte Trennungen im Normalbetrieb verursachen; Risiko beachten.
 
@@ -86,6 +102,10 @@ Drei wesentliche Hardwareursachen: zu niedrige VBUS-Spannung (unter 4.7V oft pro
 ### 3. RK3588 USB2.0 Tuning Oberfläche
 
 RK3588 USB2.0 unterstützt TYPE-C0, TYPE-C1, USB2.0 HOST0 und USB2.0 HOST1. Schritte:
+
+![Oberfläche zur Abstimmung des RK3588 USB2.0 PHY](../../images/manuals/0ec9ef065fdc/p10-f01.png)
+
+**Abbildung 5: Oberfläche zur Abstimmung des RK3588 USB2.0 PHY**
 
 1. Testschnittstelle links in Feld 1 wählen; rechts wird automatisch der SQ-Testbefehl erzeugt.
 
@@ -109,6 +129,10 @@ Tabelle 5.  RK3588 USB2.0  Signalparameter
 ### 4. RK3588 USB3.1 Tuning Oberfläche
 
 RK3588 USB3.1 umfasst USB3-OTG0 (USB3&amp;Dp CombPhy0), USB3-OTG1 (USB3&amp;Dp CombPhy1) und USB3-HOST2 (USB3&amp;PCIE&amp;SATA CombPhy). Schritte:
+
+![RK3588 USB3.1 PHY: Ports und Parameter](../../images/manuals/0ec9ef065fdc/p12-f01.png)
+
+**Abbildung 6: RK3588 USB3.1 PHY: Ports und Parameter**
 
 1. Testschnittstelle links in Feld 1 wählen; rechts wird automatisch der SQ-Testbefehl erzeugt.
 
@@ -138,6 +162,10 @@ Tabelle 11.  RK3588 USB3.1  Signalparameter
 
 RV1106 USB2.0 unterstützt Pre-emphasis samt Stärke, ODT, Augenhöhe, Rausch-, Bvalid- und Trennschwellen. RV1103/RV1103B besitzen keinen VBUS-DET-Gehäusepin und daher kein Bvalid-Tuning; andere Optionen entsprechen RV1106.
 
+![Oberfläche zur Abstimmung des RV1106 USB2.0 PHY](../../images/manuals/0ec9ef065fdc/p14-f01.png)
+
+**Abbildung 7: Oberfläche zur Abstimmung des RV1106 USB2.0 PHY**
+
 Tabelle 6.  RV1106 USB2.0  Signalparameter
 
 | Parameter | Beschreibung |
@@ -154,6 +182,10 @@ Tabelle 6.  RV1106 USB2.0  Signalparameter
 
 RV1109 USB2.0 bietet Slew Rate, Augenhöhe, Rausch- und Trennschwelle. RV1126 verwendet dieselben Optionen.
 
+![Oberfläche zur Abstimmung des RV1109 USB2.0 PHY](../../images/manuals/0ec9ef065fdc/p15-f01.png)
+
+**Abbildung 8: Oberfläche zur Abstimmung des RV1109 USB2.0 PHY**
+
 Tabelle 7.  RV1109 USB2.0  Signalparameter
 
 | Parameter | Beschreibung |
@@ -166,6 +198,10 @@ Tabelle 7.  RV1109 USB2.0  Signalparameter
 ### 7. RK3528 USB3.1 Tuning Oberfläche
 
 RK3528 USB3.1 bietet Full Txswing and Txmargin, Low Swing and Txmargin, Tx De-emphasis und Boost Level. RK3562 und RK3568 verwenden dieselben Optionen.
+
+![Oberfläche zur Abstimmung des RK3528 USB3.1 PHY](../../images/manuals/0ec9ef065fdc/p16-f01.png)
+
+**Abbildung 9: Oberfläche zur Abstimmung des RK3528 USB3.1 PHY**
 
 Tabelle 10.  RK3528 USB3.1  Signalparameter
 
@@ -463,46 +499,6 @@ Dieser Ablauf basiert auf der Dokumentation der Sammlung. Prüfen Sie Board, SoC
 ## Quellen und Originalabbildungen
 
 - Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf
-
-### Originaloberflächen und Diagramme des Handbuchs
-
-Oberflächen behalten ihre Quellsprache. Englische Originale werden verwendet, soweit vorhanden; zusätzliche Ansichten ohne englische Vorlage bleiben chinesisch. Werte sind Handbuchbeispiele, keine aktuellen Boardmessungen.
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 4 · 1](../../images/manuals/0ec9ef065fdc/p04-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 4
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 5 · 1](../../images/manuals/0ec9ef065fdc/p05-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 5
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 7 · 1](../../images/manuals/0ec9ef065fdc/p07-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 7
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 9 · 1](../../images/manuals/0ec9ef065fdc/p09-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 9
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 10 · 1](../../images/manuals/0ec9ef065fdc/p10-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 10
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 12 · 1](../../images/manuals/0ec9ef065fdc/p12-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 12
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 14 · 1](../../images/manuals/0ec9ef065fdc/p14-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 14
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 15 · 1](../../images/manuals/0ec9ef065fdc/p15-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 15
-
-![Originalabbildung des Handbuchs: usb-sq-tool · p. 16 · 1](../../images/manuals/0ec9ef065fdc/p16-f01.png)
-
-Rockchip_Introduction_USB_SQ_Tool_CN_V1.4.0.pdf · p. 16
 
 ## Verwandte Arbeitsabläufe
 

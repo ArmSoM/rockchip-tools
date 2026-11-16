@@ -42,6 +42,10 @@ Generates partition images in `rockdev`. The source heading additionally says `2
 
 The Windows source screenshot confirms that `-2` means 2k data in one page, not changing `-p 4` into a 2 KB physical page. A copyable transcription follows. SYNOPSIS lists fewer options than OPTIONS; that source difference is retained.
 
+![programmer_image_tool command help](../../images/manuals/454e7646c90d/p01-f01.png)
+
+**Figure 1: programmer_image_tool command help**
+
 ```text
 NAME
     programmer_image_tool - creating image for programming on flash
@@ -65,6 +69,10 @@ OPTIONS:
     -v    show version
 ```
 
+![Input-format and idblock options](../../images/manuals/47ce51e919d3/p01-f01.png)
+
+**Figure 2: Input-format and idblock options**
+
 ## Applicability and verification
 
 This is a documentation-based workflow for the supplied tool collection. Confirm the exact board, SoC, carrier, SDK/BSP and host architecture before using it. No flashing, provisioning, register writes or hardware tests were performed. Package availability does not establish support for every ArmSoM product.
@@ -86,18 +94,6 @@ Open the matching GitHub directory, select the required host/version, then verif
 
 - user_manual.pdf
 - user_manual.pdf
-
-### Original manual interfaces and diagrams
-
-Screens retain their source language. English-source figures are used where available; additional screens without English originals remain Chinese. Values are manual examples, not measurements of a current board.
-
-![Original manual figure: programmer-image-tool · p. 1 · 1](../../images/manuals/454e7646c90d/p01-f01.png)
-
-user_manual.pdf · p. 1
-
-![Original manual figure: programmer-image-tool · p. 1 · 1](../../images/manuals/47ce51e919d3/p01-f01.png)
-
-user_manual.pdf · p. 1
 
 ## Continue with the related workflow
 
